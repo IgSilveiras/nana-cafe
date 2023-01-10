@@ -1,0 +1,384 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Estilos del Header */
+
+header {
+    position: sticky;
+    top:0;
+}
+
+header nav {
+    height: 12vh;
+    background-color: #361500;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 12vh;
+}
+
+header nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    list-style: none;
+    margin-right: 7vw;
+}
+
+header nav ul a {
+    color: #EEC373;
+    text-decoration: none;
+}
+
+header nav ul a:hover {
+    text-shadow: 1px 1px 8px white;
+}
+
+header nav ul li {
+    margin: 0 1.5vw 0 1.5vw;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+.pfp { 
+    margin: 2.5vh 2.5vh 0 0;
+    color:white
+}
+
+/* Estilos del Main */
+
+main {
+    background-color: #a37843;
+    font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #F4DFBA;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20vh;
+    cursor: default;
+}
+
+h2 {
+    text-align: center;
+    color: #F4DFBA;
+    font-size: 2.5vh;
+    margin-bottom: 4.5vh;
+    cursor: default;
+}
+
+.indexInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.indexInfo p {
+    font-size: 2.5vh;
+    color: #F4DFBA;
+    margin-bottom: 18vh;
+    width: 60vw;
+    text-align: center;
+}
+
+.indexInfo img {
+    width: 55vw;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #F4DFBA;
+    font-size: 6vh;
+    padding-bottom: 3vh;
+}
+
+
+/* Estilos del Footer */
+
+footer {
+    background-color: #361500;
+    height: 3rem;
+    color: rgb(255, 255, 255); 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin-left: 4rem;
+}
+
+.contact {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #EEC373;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+.contact:hover {
+    text-shadow: 1px 1px 8px white;
+}
+
+.fa-brands {
+    margin: 0.5rem 1rem 0.5rem 0;
+    color:white;
+}
+
+
+/* Estilos del About Us */
+
+.spaceBelow {
+    margin-bottom: 3rem;
+}
+
+.aboutUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutUs p {
+    font-size: 1.1rem;
+    color: #F4DFBA;
+    margin-bottom: 5rem;
+    width: 46rem;
+}
+
+.aboutUs img {
+    border-radius: 4px;
+}
+
+#credit {
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    font-size: 0.7rem;
+}
+
+.smallImg {
+    width: 50rem;
+    height: 28.125rem;
+}
+
+.smallImg2 {
+    width: 50rem;
+}
+
+
+/* Estilos del Contact Us */
+
+.contact-sns {
+    display: flex;
+    flex-direction: column;  
+}
+
+.contact-sns h2 {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-left: 1rem;
+}
+
+.sns-icons {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+}
+
+.contact-loginRegister h2 {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-left: 1rem;
+}
+
+.contact-loginRegister p {
+    margin-left: 5rem;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+
+.contact-loginRegister a {
+    text-decoration: none;
+    color:#EEC373;
+}
+
+.contact-form h2 {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-left: 1rem;
+}
+
+.contact-form legend {
+    font-size: 1.7rem;
+}
+
+.contact-form form {
+    margin-left: 5rem;
+    color: #EEC373;
+    font-size: 1.3rem;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-form textarea {
+    height: 5,5rem;
+    width: 28rem;
+    margin-left: 1rem;
+}
+
+.form-buttons {
+    display:inline-block;
+    position: relative;
+    left: 12rem;
+}
+
+
+/* Estilos del Login */
+
+.logreg-main {
+    height: 34.43rem;
+    font-family: 'Nunito', sans-serif;
+    color:#EEC373;
+    font-size: 1.3rem;
+}
+
+.login-form {
+    width: 25vw;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px #361500 dashed;
+    position: relative;
+    left: 37.5vw;
+    padding: 1.5rem 0 1.1rem 0;
+}
+
+#login-button input{
+    width: 4rem;
+}
+
+#log-register {
+    position: absolute;
+    left: 24vw;
+    margin-top: 4rem;
+    margin-left: 5rem;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+
+
+/* Estilos del Register */
+
+.logreg-main legend {
+    margin-left: 1rem;
+}
+
+.register-form fieldset {
+    width: 55vw;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px #361500 dashed;
+    position: relative;
+    left: 22.5vw;
+}
+
+#reg-login {
+    position: absolute;
+    left: 26vw;
+    margin-top: 2.8rem;
+    font-size: 1.5rem;
+}
+
+.form-separate {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.register-buttons {
+    margin-top: 1rem;
+    position: relative;
+    left:35vh
+}
+
+.register-buttons input {
+    width: 4rem;
+}
+
+
+/* Estilos del Menu */
+
+.menu-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-main article {
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    background-color: white;
+    padding: 3vh;
+    border: 3px solid #6e4227;
+    font-size: 3vh;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.menu-main article:hover {
+    border: 3px double #6e4227;
+    cursor: pointer;
+}
+
+.menu-main article img {
+    width: 20vw;
+    height: 40vh;
+    border-radius: 5px;
+}
+
+.separate-products {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+/* Estilos de NanaPoints */
+
+
+
+/* Estilos del Services */
+
+.services-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-main h2 {
+    font-size: 2rem;
+}
+
+.services-main p {
+    color: #EEC373;
+    font-size: 1.1rem;
+    width: 46rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
