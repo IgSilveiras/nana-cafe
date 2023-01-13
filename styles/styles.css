@@ -22,7 +22,6 @@ header {
 header nav {
     grid-area: nav;
     justify-self: center;
-    align-self: center;
 }
 
 .logo {
@@ -50,12 +49,22 @@ header nav ul {
 }
 
 .pfp { 
-    color:white;
     grid-area: pfp;
     text-align: center;
     align-self: center;
 }
 
+.fa-circle-user {
+    font-size: 8vh;
+}
+
+.white {
+    color:white;
+}
+
+.as-center {
+    align-self: center;
+}
 
 /* Estilos del Main */
 
@@ -116,22 +125,31 @@ h2 {
 /* Estilos del Footer */
 
 footer {
+    display: grid;
+    grid-template-areas: "contact cr sns";
+    grid-template-columns: 15% 70% 15%;
+
+    height: 7vh;
     background-color: #361500;
-    height: 3rem;
-    color: rgb(255, 255, 255); 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+}
+
+footer a {
+    grid-area: contact;
 }
 
 footer p {
-    margin-left: 4rem;
+    grid-area: cr;
+    text-align: center;
+}
+
+.footer-sns {
+    grid-area: sns;
+    justify-self: center;
 }
 
 .fa-brands {
-    margin: 0.5rem 1rem 0.5rem 0;
-    color:white;
+    font-size: 4.5vh;
+    margin: 0 1vw 0 1vw;
 }
 
 
