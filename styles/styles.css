@@ -90,7 +90,7 @@ h1 {
     font-size: 20vh;
 }
 
-h2 {
+#est {
     font-size: 3vh;
     margin-bottom: 4.5vh;
 }
@@ -132,7 +132,11 @@ footer {
     grid-template-columns: 15% 70% 15%;
 
     height: 7vh;
+    width: 100%;
     background-color: #361500;
+
+    position: relative;
+    bottom:0;
 }
 
 footer a {
@@ -166,7 +170,7 @@ footer p {
 
 /* Estilos del About Us */
 
-.grid-container {
+.about-grid {
     display: grid;
     grid-template-areas:    
     "pic txt"
@@ -223,4 +227,24 @@ footer p {
 
 .credit {
     font-size: 14px;
+}
+
+
+/* Estilos del Contacto */
+
+.contact-grid {
+    display: grid;
+
+    margin: 0 7.5vw 0 7.5vw;
+    
+    grid-template-areas: 
+    "sns-subtitle  login-subtitle"
+    "sns-content   login-content"
+    "form-subtitle form-subtitle"
+    "form-content  form-content";
+
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 6vh 8vh 6vh 25vh;
+    
+    border: 2px solid #361500;
 }
