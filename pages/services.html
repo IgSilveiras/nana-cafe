@@ -6,71 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nana Café | Services</title>
     
-    <!-- Icono y Estilos -->
+    <!-- Icono -->
     <link rel="shortcut icon" href="../assets/images/coffeecup.ico">
-    <link rel="stylesheet" href="../styles/styles.css">
 
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="../index.html"><img src="../assets/images/nanacafelogo.png" alt="Café Logo" class="logo"></a>
-            
-            <ul>
-                <li><a href="./menu.html">Menu</a></li>
-                <li><a href="./services.html">Services</a></li>
-                <li><a href="./nanaPoints.html"> NanaPoints</a></li>
-                <li><a href="./aboutUs.html">About Us</a></li>
-            </ul>
+        <a href="../index.html"><img src="../assets/images/nanacafelogo.png" alt="Café Logo" class="logo"></a>
         
-            <a href="./login.html"><i class="fa-solid fa-circle-user fa-3x pfp"></i></a>
+        <nav class="as-center">
+            <ul>
+                <li><a href="./menu.html" class="hover-light">Menu</a></li>
+                <li><a href="./services.html" class="hover-light">Services</a></li>
+                <li><a href="./nanaPoints.html" class="hover-light"> NanaPoints</a></li>
+               <li><a href="./aboutUs.html" class="hover-light">About Us</a></li>
+            </ul>
         </nav>
+
+        <a href="./login.html" class="pfp as-center"><i class="fa-solid fa-circle-user white"></i></a>
     </header>
 
     <main>
-        <h1 class="spaceBelow">Our Services</h1>
+        <div class="flex-column center">
+            <h1>Our Services</h1>
+            
+            <section class="services-grid solid-border animate__animated animate__fadeIn">
+                <div class="coffee flex-column center bgc-1 dashed-border">
+                    <h3>Top-quality Coffee and Homemade Pastry</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae earum quia cum labore numquam architecto quibusdam, laboriosam quo sit similique non sint consequuntur eligendi. Eligendi, magni? Doloribus ut voluptatum cum.</p>
+                </div>
+                
+                <div class="autoservice flex-column center bgc-1 dashed-border">
+                    <h3>Auto-service</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed necessitatibus obcaecati in beatae aperiam distinctio ab nostrum, commodi inventore numquam quisquam totam adipisci voluptas ea, porro iste, nesciunt dolore. Ipsa.</p>
+                </div>
+                
+                <div class="delivery flex-column center bgc-1 dashed-border">
+                    <h3>Delivery Service</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae nesciunt iste optio, facilis neque, velit alias ea consequatur dolorem blanditiis reiciendis dolorum maiores, vel corporis amet non cum pariatur consectetur? Voluptas maxime quasi aliquam iusto?</p>
+                </div>
 
-        <section class="services-main">
-            <div>
-                <h2>Top-quality Coffee and Homemade Sweets</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae earum quia cum labore numquam architecto quibusdam, laboriosam quo sit similique non sint consequuntur eligendi. Eligendi, magni? Doloribus ut voluptatum cum.</p>
-            </div>
-            
-            <div>
-                <h2>Auto-service</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit eum enim harum laudantium dolorem impedit beatae, consectetur autem itaque eius libero. Iusto debitis harum tenetur quibusdam recusandae nemo et autem.</p>
-            </div>
-            
-            <div>
-                <h2>Delivery Service</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, autem. Ducimus aliquam consequatur autem consectetur! Error, nesciunt necessitatibus suscipit non possimus iure aut, fugit consequatur odio reiciendis quod expedita qui.</p>
-            </div>
-            
-            <div>
-                <h2>Points System</h2>
-                <p>With your purchases you will earn <a href="./nanaPoints.html">NanaPoints</a>. You can use them to get discounts, free items and other things. You need to be registered to use the system.</p>
-            </div>
-            
-            <div>
-                <h2>Customer-Personalized Coffee</h2>
-                <p>If the coffee you are looking for is not included in our menu or you want to try something new, you can ask for a custom made coffee with your own recipe. It will be included in the menu for a few days (with your approval), if it is popular it will be addded to it indefinitely and you will be given respective credit for it! (Prices may vary depending on the recipe you give us).</p>
-            </div>
-        </section>
+                <div id="img1 dashed-border">
+                    <img src="../assets/images/equipment-1.jpg" alt="Coffee shop equipment">
+                </div>
+
+                <div id="img2 dashed-border">
+                    <img src="../assets/images/latte-art.jpg" alt="A latte coffee with art on top">
+                    
+                </div>
+                
+                <div id="img3 dashed-border">
+                    <img src="../assets/images/equipment-2.jpg" alt="Coffee shop equipment">
+                </div>
+
+                <div class="points flex-column center bgc-1 dashed-border">
+                    <h3>Points System</h3>
+                    <p>With your purchases you will earn <a href="./nanaPoints.html">NanaPoints</a>. You can use them to get discounts, free items and other things. You need to be registered to use the system.</p>
+                </div>
+                
+                <div class="custom flex-column center bgc-1 dashed-border">
+                    <h3>Customer-Personalized Coffee</h3>
+                    <p>If the coffee you are looking for is not included in our menu or you want to try something new, you can ask for a custom made coffee with your own recipe. It will be included in the menu for a few days (with your approval), if it is popular it will be addded to it indefinitely and you will be given respective credit for it! (Prices may vary depending on the recipe you give us).</p>
+                </div>
+            </section>
+        </div>
     </main>
     
-    <footer>
-        <a href="./contactUs.html" class="contact">Contact Us</a>
-        <p>Nana 2022 © All rights reserved</p>
-        <div>
-            <a href="https://web.whatsapp.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
-            <a href="https://twitter.com/?lang=en" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter fa-2x"></i></a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram fa-2x"></i></a>
+    <footer class="white">
+        <a href="./contactUs.html" class="hover-light as-center">Contact Us</a>
+        <p class="as-center no-margin">Nana 2022 © All rights reserved</p>
+        <div class="footer-sns as-center">
+            <a href="https://web.whatsapp.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp white"></i></a>
+            <a href="https://twitter.com/?lang=en" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter white"></i></a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram white"></i></a>
         </div>
     </footer>
 </body>
