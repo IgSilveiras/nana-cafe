@@ -17,6 +17,8 @@ header {
 
     height: 12vh;
     background-color: #361500;
+
+    z-index: 10;
 }
 
 header nav {
@@ -33,7 +35,7 @@ header nav ul {
     display: flex;
     flex-flow: row wrap;
     list-style: none;
-    margin-right: 10vw;
+    margin: 0 10vw 0 0;
 }
 
 .hover-light{
@@ -154,3 +156,46 @@ footer p {
 
 
 /* Estilos del About Us */
+
+.grid-container {
+    display: grid;
+    grid-template-areas:    
+    "pic txt"
+    "credit txt";
+
+    grid-template-rows: 70vh 5vh;
+    grid-template-columns: 24.4vw auto;
+
+    margin: 7.5vh 7.5vw 7.5vh 7.5vw;
+    border: 3px solid #361500;
+
+    background-color: #6d3513;
+}
+
+.mumei-pic {
+    grid-area: pic;
+    width: 100%;
+    height: 100%;
+    justify-self: end;
+    border-right: 2px dashed #361500;
+}
+
+#credit {
+    grid-area: credit;
+    font-size: 2vh;
+    border-right: 2px dashed #361500;
+    text-align: end;
+}
+
+#credit p {
+    margin: 0;
+}
+
+.description {
+    grid-area: txt;
+}
+
+.description h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 15vh;
+}

@@ -6,22 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nana Café | About Us</title>
 
-    <!-- Icono y Estilos -->
+    <!-- Icono -->
     <link rel="shortcut icon" href="../assets/images/coffeecup.ico">
-    <link rel="stylesheet" href="../styles/styles.css">
 
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
 <body>
     <header>
         <a href="../index.html"><img src="../assets/images/nanacafelogo.png" alt="Café Logo" class="logo"></a>
         
-        <nav class="as-center">          
+        <nav class="as-center">
             <ul>
                 <li><a href="./menu.html" class="hover-light">Menu</a></li>
                 <li><a href="./services.html" class="hover-light">Services</a></li>
@@ -36,17 +44,24 @@
     <main>
         <h1>About Us</h1>
 
-        <section class="flex-column-center">
-            <img src="../assets/images/mumei1.webp" alt="Our Founder">
-            <p>Art by <a href="https://twitter.com/paul94104875" target="_blank" rel="noopener noreferrer">Wolfgang</a></p>
-            
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati temporibus placeat, nihil numquam eum facere nemo asperiores. Libero, dolorum a dolores voluptatem molestias culpa facilis officia esse eum repudiandae nemo blanditiis porro earum quasi. Nostrum a accusamus, similique corrupti illum dicta atque earum. Culpa necessitatibus debitis sed repellat, atque porro voluptas expedita a dolor cumque nam obcaecati accusamus sit suscipit perferendis, odio ratione? Reiciendis porro amet eveniet facilis consequatur aut animi aspernatur accusantium mollitia omnis ut, non cupiditate quisquam nemo laboriosam cum ipsa! Soluta, sequi totam, sed quis aliquid incidunt illo voluptatibus odio nobis iure at quo a exercitationem error?</p>
+        <section>
+            <div class="grid-container">
+                <img src="../assets/images/mumei.jpg" alt="Our Founder" class="mumei-pic as-center animate__animated animate__fadeInLeft wow">
+                <div id="credit" class="animate__animated animate__fadeInLeft wow">
+                    <p>Art by <a href="https://twitter.com/paul94104875" target="_blank" rel="noopener noreferrer">Wolfgang</a></p>
+                </div>
+                
+                <div class="description as-center animate__animated animate__fadeInRight wow">
+                    <h2>Our Founder</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quos fugit cupiditate et rem fugiat, animi nam corrupti provident, omnis numquam voluptatum, qui consequuntur minus consectetur accusantium. Laudantium esse praesentium rerum! Pariatur modi tenetur ipsam recusandae sint error exercitationem rem nam asperiores quisquam debitis explicabo fugiat aspernatur voluptates, perspiciatis ut!</p>
+                </div>
+            </div>
             
             <img src="../assets/images/handshake.png" alt="Two leaders doing a handshake for a peace treaty">
             
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat doloremque soluta, aperiam dignissimos minima asperiores, iure vitae est corrupti nisi reiciendis fuga sint laudantium nostrum et omnis provident blanditiis voluptas facilis alias, sunt maiores voluptatem expedita unde. Fuga similique molestias fugit earum, repellendus veritatis, magnam numquam odio ab officiis corrupti eius distinctio, ex temporibus perferendis iste quod maiores voluptates veniam tenetur dolorum officia reiciendis? Perspiciatis similique voluptatibus officia cumque nihil libero ullam vero, ex labore, ad dolore accusamus laudantium voluptatem?</p>
             
-            <img src="../assets/images/northVancouver.jpg" alt="North Vancouver, where our cafe is located">
+            <!-- <img src="../assets/images/northVancouver.jpg" alt="North Vancouver, where our cafe is located"> -->
             
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aperiam, dolore nostrum incidunt tempora in natus veniam esse magni quos sit amet, excepturi voluptatum sint praesentium? Fugiat modi pariatur magnam illum, saepe unde quae praesentium aperiam atque sed ipsam autem dicta nobis. Eum nesciunt sit aut fugiat totam! Voluptas accusamus, ex culpa labore unde quis pariatur excepturi eius molestiae cum. Maiores expedita mollitia doloremque sit, officia deserunt tempore quasi placeat aliquid, amet voluptatem possimus asperiores impedit quas laudantium vitae inventore!</p>
             
@@ -65,5 +80,14 @@
             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram white"></i></a>
         </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!-- wow.js -->
+    <script src="../js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 </body>
 </html>
