@@ -158,8 +158,8 @@ footer p {
     display: flex;
 }
 
-.fa-brands {
-    font-size: 4.5vh;
+footer .fa-brands {
+    font-size: 3vw;
     margin: 0 1vw 0 1vw;
 }
 
@@ -232,19 +232,71 @@ footer p {
 
 /* Estilos del Contacto */
 
-.contact-grid {
+.contact-grid-parent {
     display: grid;
-
-    margin: 0 7.5vw 0 7.5vw;
     
     grid-template-areas: 
-    "sns-subtitle  login-subtitle"
-    "sns-content   login-content"
-    "form-subtitle form-subtitle"
-    "form-content  form-content";
-
+    "sns login"
+    "form form";
     grid-template-columns: 50% 50%;
-    grid-template-rows: 6vh 8vh 6vh 25vh;
+    grid-template-rows: 30vh 30vh;
+    gap: 5%;
+    margin: 4vh 7.5vw 0 7.5vw;
+    padding-bottom: 4vh;
+}
+
+.contact-grid-child {
+    display: grid;
     
+    grid-template-areas: 
+    "subtitle"
+    "content";
+
+    grid-template-rows: 1fr 3fr;
     border: 2px solid #361500;
+
+    background-color: #9d6f3a;
+}
+
+.sns-container {
+    grid-area: sns;
+}
+
+.sns-subtitle,
+.login-subtitle,
+.form-subtitle {
+    grid-area: subtitle;
+    
+    justify-content: center;
+    background-color: #6d3513;
+    font-size: 16px;
+    
+    border-bottom: 2px dashed #361500;
+    color:#EEC373;
+}
+
+.sns-content,
+.login-content {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.sns-content a {
+    font-size: 80px;
+    margin: 0 1vw 0 1vw;
+}
+
+.login-content p {
+    font-size: 42px;
+    color:black;
+}
+
+.login-content a {
+    font-size: 32px;
+    color: #EEC373;
+    text-decoration: none;
+}
+
+.form-container {
+    grid-area: form;
 }

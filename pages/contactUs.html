@@ -37,52 +37,40 @@
 
     <main>
         <h1>Contact Us</h1>
-        <div class="contact-grid">
-            <div class="sns-h2 flex-column-center">
-                <h3>Feel free to message us on our SNS for any questions!</h3>
-            </div>
-            <div class="sns-content">
-                <a href="https://web.whatsapp.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp fa-5x"></i></a>
-                <a href="https://twitter.com/?lang=en" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter fa-5x"></i></a>
-                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram fa-5x"></i></a>
-            </div>
-            
-            <div class="login-h2 flex-column-center">
-                <h3 class="login-h2">Or you can text us via our own page, if you have an account</h3>
-            </div>
-            <p class="login-content"><a href="./login.html">Login</a> | <a href="./register.html">Register</a></p>
-            
-            <div class="form-h2 flex-column-center">
-                <h3>If you don't have an account, you can fill this form and we will answer you as soon as we can</h3>
-            </div>
-            <form>
-                <legend>Contact Form</legend>
-                <div>
-                    <div class="form-content">
-                        <div>
-                            <label>Name</label>
-                            <input type="text" placeholder="Your Name" required>
-                        </div>
-                            
-                        <div>
-                            <label>Age</label>
-                            <input type="text" placeholder="Your Age" required>
-                        </div>
-                            
-                        <div>
-                            <label>Email</label>
-                            <input type="email" placeholder="Email" required>
-                        </div>   
-                    </div>
-            
-                    <textarea name="Your question" id="question" placeholder="Your question" required></textarea>
+        
+        <div class="contact-grid-parent">
+            <div class="contact-grid-child sns-container">
+                <div class="sns-subtitle flex-column-center">
+                    <h3>Feel free to message us on our SNS for any questions!</h3>
                 </div>
-            
-                <div class="form-buttons">
-                    <input type="submit" value="Submit">
-                    <input type="reset" value="Clear">
+
+                <div class="sns-content flex-column-center">
+                    <a href="https://web.whatsapp.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp white"></i></a>
+                    <a href="https://twitter.com/?lang=en" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter white"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram white"></i></a>
                 </div>
-            </form>
+            </div>
+
+            <div class="contact-grid-child login-container">
+                <div class="login-subtitle flex-column-center">
+                    <h3>You can also text us via our website, if you have an account</h3>
+                </div>
+
+                <div class="login-content flex-column-center">
+                    <p><a href="./login.html">Login</a> | <a href="./register.html">Register</a></p>
+                </div>
+            </div>
+
+            <div class="contact-grid-child form-container">
+                <div class="form-subtitle flex-column-center">
+                    <h3>Alternatively you can fill this form and we will answer you as soon as we can</h3>
+                </div>
+
+                <div class="form-content">
+                    
+                </div>
+
+            </div>
         </div>
     </main>
     
