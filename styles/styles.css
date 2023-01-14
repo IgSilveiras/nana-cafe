@@ -17,6 +17,8 @@ header {
 
     height: 12vh;
     background-color: #361500;
+
+    z-index: 10;
 }
 
 header nav {
@@ -33,7 +35,7 @@ header nav ul {
     display: flex;
     flex-flow: row wrap;
     list-style: none;
-    margin-right: 10vw;
+    margin: 0 10vw 0 0;
 }
 
 .hover-light{
@@ -88,7 +90,7 @@ h1 {
     font-size: 20vh;
 }
 
-h2 {
+#est {
     font-size: 3vh;
     margin-bottom: 4.5vh;
 }
@@ -130,7 +132,11 @@ footer {
     grid-template-columns: 15% 70% 15%;
 
     height: 7vh;
+    width: 100%;
     background-color: #361500;
+
+    position: relative;
+    bottom:0;
 }
 
 footer a {
@@ -140,6 +146,8 @@ footer a {
 footer p {
     grid-area: cr;
     text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
 }
 
 .footer-sns {
@@ -150,10 +158,145 @@ footer p {
     display: flex;
 }
 
-.fa-brands {
-    font-size: 4.5vh;
+footer .fa-brands {
+    font-size: 3vw;
     margin: 0 1vw 0 1vw;
 }
 
 
+.no-margin {
+    margin: 0;
+}
+
 /* Estilos del About Us */
+
+.about-grid {
+    display: grid;
+    grid-template-areas:    
+    "pic txt"
+    "credit txt";
+
+    grid-template-rows: 70vh 5vh;
+    grid-template-columns: 24.4vw auto;
+
+    margin: 7.5vh 7.5vw 7.5vh 7.5vw;
+    border: 3px solid #361500;
+
+    background-color: #6d3513;
+}
+
+.mumei-pic {
+    grid-area: pic;
+    width: 100%;
+    height: 100%;
+    justify-self: end;
+    border-right: 2px dashed #361500;
+}
+
+#credit {
+    grid-area: credit;
+    border-right: 2px dashed #361500;
+    text-align: end;
+}
+
+.description {
+    grid-area: txt;
+}
+
+.subtitle {
+    font-family: 'Dancing Script', cursive;
+    font-size: 15vh;
+}
+
+.accordion {
+    padding-bottom: 3vh;
+}
+
+.accordion-button,
+.accordion-button:enabled {
+    background-color: #361500;
+    color:#EEC373;
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+}
+
+.accordion-item {
+    background-color: #6d3513;
+    color:#EEC373;
+}
+
+.credit {
+    font-size: 14px;
+}
+
+
+/* Estilos del Contacto */
+
+.contact-grid-parent {
+    display: grid;
+    
+    grid-template-areas: 
+    "sns login"
+    "form form";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30vh 30vh;
+    gap: 5%;
+    margin: 4vh 7.5vw 0 7.5vw;
+    padding-bottom: 4vh;
+}
+
+.contact-grid-child {
+    display: grid;
+    
+    grid-template-areas: 
+    "subtitle"
+    "content";
+
+    grid-template-rows: 1fr 3fr;
+    border: 2px solid #361500;
+
+    background-color: #9d6f3a;
+}
+
+.sns-container {
+    grid-area: sns;
+}
+
+.sns-subtitle,
+.login-subtitle,
+.form-subtitle {
+    grid-area: subtitle;
+    
+    justify-content: center;
+    background-color: #6d3513;
+    font-size: 16px;
+    
+    border-bottom: 2px dashed #361500;
+    color:#EEC373;
+}
+
+.sns-content,
+.login-content {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.sns-content a {
+    font-size: 80px;
+    margin: 0 1vw 0 1vw;
+}
+
+.login-content p {
+    font-size: 42px;
+    color:black;
+}
+
+.login-content a {
+    font-size: 32px;
+    color: #EEC373;
+    text-decoration: none;
+}
+
+.form-container {
+    grid-area: form;
+}

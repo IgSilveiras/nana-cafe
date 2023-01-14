@@ -6,89 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nana Café | Contact Us</title>
     
-    <!-- Icono y Estilos -->
+    <!-- Icono -->
     <link rel="shortcut icon" href="../assets/images/coffeecup.ico">
-    <link rel="stylesheet" href="../styles/styles.css">
 
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="../index.html"><img src="../assets/images/nanacafelogo.png" alt="Café Logo" class="logo"></a>
-            
-            <ul>
-                <li><a href="./menu.html">Menu</a></li>
-                <li><a href="./services.html">Services</a></li>
-                <li><a href="./nanaPoints.html"> NanaPoints</a></li>
-                <li><a href="./aboutUs.html">About Us</a></li>
-            </ul>
+        <a href="../index.html"><img src="../assets/images/nanacafelogo.png" alt="Café Logo" class="logo"></a>
         
-            <a href="./login.html"><i class="fa-solid fa-circle-user fa-3x pfp"></i></a>
+        <nav class="as-center">
+            <ul>
+                <li><a href="./menu.html" class="hover-light">Menu</a></li>
+                <li><a href="./services.html" class="hover-light">Services</a></li>
+                <li><a href="./nanaPoints.html" class="hover-light"> NanaPoints</a></li>
+               <li><a href="./aboutUs.html" class="hover-light">About Us</a></li>
+            </ul>
         </nav>
+
+        <a href="./login.html" class="pfp as-center"><i class="fa-solid fa-circle-user white"></i></a>
     </header>
 
     <main>
-        <h1 class="spaceBelow">Contact Us</h1>
-        <section class="contact-sns">
-            <h2>Feel free to message us on our SNS for any questions!</h2>
-            <div class="sns-icons">
-                <a href="https://web.whatsapp.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp fa-5x"></i></a>
-                <a href="https://twitter.com/?lang=en" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter fa-5x"></i></a>
-                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram fa-5x"></i></a>
+        <h1>Contact Us</h1>
+        
+        <div class="contact-grid-parent">
+            <div class="contact-grid-child sns-container">
+                <div class="sns-subtitle flex-column-center">
+                    <h3>Feel free to message us on our SNS for any questions!</h3>
+                </div>
+
+                <div class="sns-content flex-column-center">
+                    <a href="https://web.whatsapp.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp white"></i></a>
+                    <a href="https://twitter.com/?lang=en" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter white"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram white"></i></a>
+                </div>
             </div>
-        </section>
 
-        <section class="contact-loginRegister">
-            <h2>Or you can text us via our own page, if you have an account</h2>
-            <p><a href="./login.html">Login</a> | <a href="./register.html">Register</a></p>
-        </section>
-
-        <section class="contact-form">
-            <h2>If you don't have an account, you can fill this form and we will answer you as soon as we can</h2>
-            <form>
-                <legend>Contact Form</legend>
-                <div class="form-row">
-                    <div>
-                        <div>
-                            <label>Name</label>
-                            <input type="text" placeholder="Your Name" required>
-                        </div>
-                        
-                        <div>
-                            <label>Age</label>
-                            <input type="text" placeholder="Your Age" required>
-                        </div>
-                        
-                        <div>
-                            <label>Email</label>
-                            <input type="email" placeholder="Email" required>
-                        </div>   
-                    </div>
-
-                    <textarea name="Your question" id="question" placeholder="Your question" required></textarea>
+            <div class="contact-grid-child login-container">
+                <div class="login-subtitle flex-column-center">
+                    <h3>You can also text us via our website, if you have an account</h3>
                 </div>
 
-                <div class="form-buttons">
-                    <input type="submit" value="Submit">
-                    <input type="reset" value="Clear">
+                <div class="login-content flex-column-center">
+                    <p><a href="./login.html">Login</a> | <a href="./register.html">Register</a></p>
                 </div>
-            </form>
-        </section>
+            </div>
+
+            <div class="contact-grid-child form-container">
+                <div class="form-subtitle flex-column-center">
+                    <h3>Alternatively you can fill this form and we will answer you as soon as we can</h3>
+                </div>
+
+                <div class="form-content">
+                    
+                </div>
+
+            </div>
+        </div>
     </main>
     
-    <footer>
-        <a href="./contactUs.html" class="contact">Contact Us</a>
-        <p>Nana 2022 © All rights reserved</p>
-        <div>
-            <a href="https://web.whatsapp.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
-            <a href="https://twitter.com/?lang=en" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter fa-2x"></i></a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram fa-2x"></i></a>
+    <footer class="white">
+        <a href="./contactUs.html" class="hover-light as-center">Contact Us</a>
+        <p class="as-center no-margin">Nana 2022 © All rights reserved</p>
+        <div class="footer-sns as-center">
+            <a href="https://web.whatsapp.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp white"></i></a>
+            <a href="https://twitter.com/?lang=en" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter white"></i></a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram white"></i></a>
         </div>
     </footer>
 </body>
