@@ -101,6 +101,12 @@ h1 {
     align-items: center;
 }
 
+.flex-row-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .flex-column-center img {
     height: 60vh;
 }
@@ -239,10 +245,10 @@ footer .fa-brands {
     "sns login"
     "form form";
     grid-template-columns: 50% 50%;
-    grid-template-rows: 30vh 30vh;
+    grid-template-rows: 30vh 50vh;
     gap: 5%;
     margin: 4vh 7.5vw 0 7.5vw;
-    padding-bottom: 4vh;
+    padding-bottom: 5vh;
 }
 
 .contact-grid-child {
@@ -276,8 +282,8 @@ footer .fa-brands {
 }
 
 .sns-content,
-.login-content {
-    flex-direction: row;
+.login-content,
+.form-content {
     justify-content: center;
 }
 
@@ -299,4 +305,32 @@ footer .fa-brands {
 
 .form-container {
     grid-area: form;
+    color: #EEC373;
+}
+
+.form-container div {
+    width: 100%;
+}
+
+.form-organization {
+    width: 40%;
+}
+
+.form-organization div {
+    margin: 1vh 4vw 1vh 0;
+}
+
+form textarea {
+    width: 70vw;
+    height: 20vh;
+}
+
+.buttons {
+    justify-content: center;
+    margin-top: 3vh;
+}
+
+.buttons input {
+    padding: 2.5px 10px 2.5px 10px;
+    margin:0 2vw 0 2vw;
 }
