@@ -191,7 +191,6 @@ footer p {
 
 #credit {
     grid-area: credit;
-    font-size: 14px;
     border-right: 2px dashed #361500;
     text-align: end;
 }
@@ -200,7 +199,7 @@ footer p {
     grid-area: txt;
 }
 
-.description h2 {
+.subtitle {
     font-family: 'Dancing Script', cursive;
     font-size: 15vh;
 }
@@ -222,6 +221,6 @@ footer p {
     color:#EEC373;
 }
 
-.credit2 {
+.credit {
     font-size: 14px;
 }
