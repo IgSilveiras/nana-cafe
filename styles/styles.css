@@ -142,11 +142,16 @@ footer a {
 footer p {
     grid-area: cr;
     text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
 }
 
 .footer-sns {
     grid-area: sns;
     justify-self: center;
+
+    /* d-flex para que se desactive el wrap */
+    display: flex;
 }
 
 .fa-brands {
@@ -154,6 +159,10 @@ footer p {
     margin: 0 1vw 0 1vw;
 }
 
+
+.no-margin {
+    margin: 0;
+}
 
 /* Estilos del About Us */
 
@@ -187,10 +196,6 @@ footer p {
     text-align: end;
 }
 
-#credit p {
-    margin: 0;
-}
-
 .description {
     grid-area: txt;
 }
@@ -198,4 +203,21 @@ footer p {
 .description h2 {
     font-family: 'Dancing Script', cursive;
     font-size: 15vh;
+}
+
+.accordion {
+    padding-bottom: 3vh;
+}
+
+.accordion-button,
+.accordion-button:enabled {
+    background-color: #361500;
+    color:#EEC373;
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+}
+
+.accordion-item {
+    background-color: #6d3513;
+    color:#EEC373;
 }
