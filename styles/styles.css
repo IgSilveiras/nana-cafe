@@ -191,7 +191,7 @@ footer p {
 
 #credit {
     grid-area: credit;
-    font-size: 2vh;
+    font-size: 14px;
     border-right: 2px dashed #361500;
     text-align: end;
 }
@@ -220,4 +220,8 @@ footer p {
 .accordion-item {
     background-color: #6d3513;
     color:#EEC373;
+}
+
+.credit2 {
+    font-size: 14px;
 }
