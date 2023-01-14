@@ -145,6 +145,9 @@ footer p {
 .footer-sns {
     grid-area: sns;
     justify-self: center;
+
+    /* d-flex para que se desactive el wrap */
+    display: flex;
 }
 
 .fa-brands {
