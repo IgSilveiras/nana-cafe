@@ -6,99 +6,208 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nana Café | Menu</title>
     
-    <!-- Icono y Estilos -->
+    <!-- Icono -->
     <link rel="shortcut icon" href="../assets/images/coffeecup.ico">
-    <link rel="stylesheet" href="../styles/styles.css">
 
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="../index.html"><img src="../assets/images/nanacafelogo.png" alt="Café Logo" class="logo"></a>
-            
-            <ul>
-                <li><a href="./menu.html">Menu</a></li>
-                <li><a href="./services.html">Services</a></li>
-                <li><a href="./nanaPoints.html"> NanaPoints</a></li>
-                <li><a href="./aboutUs.html">About Us</a></li>
-            </ul>
+        <a href="../index.html"><img src="../assets/images/nanacafelogo.png" alt="Café Logo" class="logo"></a>
         
-            <a href="./login.html"><i class="fa-solid fa-circle-user fa-3x pfp"></i></a>
+        <nav class="as-center">
+            <ul>
+                <li><a href="./menu.html" class="hover-light">Menu</a></li>
+                <li><a href="./services.html" class="hover-light">Services</a></li>
+                <li><a href="./nanaPoints.html" class="hover-light"> NanaPoints</a></li>
+               <li><a href="./aboutUs.html" class="hover-light">About Us</a></li>
+            </ul>
         </nav>
+
+        <a href="./login.html" class="pfp as-center"><i class="fa-solid fa-circle-user white"></i></a>
     </header>
 
     <main>
         <h1>Menu</h1>
-        <div class="menu-main">
-            <div class="separate-products">
-                <article>
-                    <img src="../assets/images/espresso.webp" alt="espresso">
-                    <div class="form-separate">
-                        <p class="product-name">Espresso</p>
-                        <p class="product-price">$4</p>
-                    </div>
-                </article>
+        <div class="flex-row center jc-center wrap">
+                
+            <article class="flex-column center">
+                <img src="../assets/images/espresso.jpg" alt="espresso">
+                <div class="flex-row space-between">
+                    <p>Espresso</p>
+                    <p>$4</p>
+                </div>
+            </article>
+            
+            <article class="flex-column center">
+                <img src="../assets/images/capuccino.jpg" alt="capuccino">
+                <div class="flex-row space-between">
+                    <p>Capuccino</p>
+                    <p>$5</p>
+                </div>
+            </article>
+            
+            <article class="flex-column center">
+                <img src="../assets/images/latte.jpg" alt="latte">
+                <div class="flex-row space-between">
+                    <p>Latte</p>
+                    <p>$5</p>
+                </div>
+            </article>
+            
+            <article class="flex-column center">
+                <img src="../assets/images/mocaccino.jpg" alt="mocaccino">
+                <div class="flex-row space-between">
+                    <p>Mocaccino</p>
+                    <p>$6</p>
+                </div>
+            </article>
 
-                <article>
-                    <img src="../assets/images/capuccino.jpg" alt="capuccino">
-                    <div class="form-separate">
-                        <p class="product-name">Capuccino</p>
-                        <p class="product-price">$5</p>
-                    </div>
-                </article>
-            </div>
-
-            <div class="separate-products">
-                <article>
-                    <img src="../assets/images/latte.jpg" alt="latte">
-                    <div class="form-separate">
-                        <p class="product-name">Latte</p>
-                        <p class="product-price">$5</p>
-                    </div>
-                </article>
-
-                <article>
-                    <img src="../assets/images/mocaccino.jpg" alt="mocaccino">
-                    <div class="form-separate">
-                        <p class="product-name">Mocaccino</p>
-                        <p class="product-price">$6</p>
-                    </div>
-                </article>
-            </div>
-
-            <div class="separate-products">
-                <article>
-                    <img src="../assets/images/Fruit-Tea.jpg" alt="fruit-tea">
-                    <div class="form-separate">
-                        <p class="product-name">Fruit Tea</p>
-                        <p class="product-price">$4</p>
-                    </div>
-                </article>
-
-                <article>
-                    <img src="../assets/images/flowerTea.webp" alt="flower-tea">
-                    <div class="form-separate">
-                        <p class="product-name">Flower Tea</p>
-                        <p class="product-price">$4</p>
-                    </div>
-                </article>
-            </div>
+            <article class="flex-column center">
+                <img src="../assets/images/piccolo.jpg" alt="piccolo">
+                <div class="flex-row space-between">
+                    <p>Piccolo</p>
+                    <p>$7</p>
+                </div>
+            </article>
+            
+            <article class="flex-column center">
+                <img src="../assets/images/affogato.jpg" alt="affogato">
+                <div class="flex-row space-between">
+                    <p>Affogato</p>
+                    <p>$8</p>
+                </div>
+            </article>
+            
+            <article class="flex-column center">
+                <img src="../assets/images/americano.jpg" alt="americano">
+                <div class="flex-row space-between">
+                    <p>Americano</p>
+                    <p>$4</p>
+                </div>
+            </article>
+            
+            <article class="flex-column center">
+                <img src="../assets/images/au-lait.jpg" alt="au-lait">
+                <div class="flex-row space-between">
+                    <p>Au-lait</p>
+                    <p>$5</p>
+                </div>
+            </article>
+            
+            <article class="flex-column center">
+                <img src="../assets/images/matcha-latte.jpg" alt="matcha-latte">
+                <div class="flex-row space-between">
+                    <p>Matcha Latte</p>
+                    <p>$6</p>
+                </div>
+            </article>
+            
+            <article class="flex-column center">
+                <img src="../assets/images/green-tea.jpg" alt="green-tea">
+                <div class="flex-row space-between">
+                    <p>Green Tea</p>
+                    <p>$4</p>
+                </div>
+            </article>
+            
+            <article class="flex-column center">
+                <img src="../assets/images/black-tea.jpg" alt="black-tea">
+                <div class="flex-row space-between">
+                    <p>Black Tea</p>
+                    <p>$4</p>
+                </div>
+            </article>
+            
+            <article class="flex-column center">
+                <img src="../assets/images/oolong-tea.jpg" alt="oolong-tea">
+                <div class="flex-row space-between">
+                    <p>Oolong Tea</p>
+                    <p>$5</p>
+                </div>
+            </article>
+            
+            <article class="flex-column center">
+                <img src="../assets/images/Fruit-Tea.jpg" alt="fruit-tea">
+                <div class="flex-row space-between">
+                    <p>Fruit Tea</p>
+                    <p>$5</p>
+                </div>
+            </article>
+            
+            <article class="flex-column center">
+                <img src="../assets/images/smoothie.jpg" alt="smoothie">
+                <div class="flex-row space-between">
+                    <p>Smoothie</p>
+                    <p>$4</p>
+                </div>
+            </article>
+            
+            <article class="flex-column center">
+                <img src="../assets/images/mont-blanc.jpg" alt="mont-blanc">
+                <div class="flex-row space-between">
+                    <p>Mont-blanc</p>
+                    <p>$6.50</p>
+                </div>
+            </article>
+            
+            <article class="flex-column center">
+                <img src="../assets/images/trio-chocolat.jpg" alt="trio-chocolate">
+                <div class="flex-row space-between">
+                    <p>Trio d'Chocolat</p>
+                    <p>$6.5</p>
+                </div>
+            </article>
+            
+            <article class="flex-column center">
+                <img src="../assets/images/matcha-cake.jpg" alt="matcha-cake">
+                <div class="flex-row space-between">
+                    <p>Matcha Cake</p>
+                    <p>$3</p>
+                </div>
+            </article>
+            
+            <article class="flex-column center">
+                <img src="../assets/images/croissant.jpg" alt="croissant">
+                <div class="flex-row space-between">
+                    <p>Croissant</p>
+                    <p>$2</p>
+                </div>
+            </article>
+            
+            <article class="flex-column center">
+                <img src="../assets/images/doughnut.jpg" alt="doughnut">
+                <div class="flex-row space-between">
+                    <p>Doughnut</p>
+                    <p>$2.50</p>
+                </div>
+            </article>
+            
+            <article class="flex-column center">
+                <img src="../assets/images/cinnamon-rolls.jpg" alt="cinnamon-rolls">
+                <div class="flex-row space-between">
+                    <p>Cinnamon Roll</p>
+                    <p>$2.5</p>
+                </div>
+            </article>
         </div>
     </main>
     
-    <footer>
-        <a href="./contactUs.html" class="contact">Contact Us</a>
-        <p>Nana 2022 © All rights reserved</p>
-        <div>
-            <a href="https://web.whatsapp.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
-            <a href="https://twitter.com/?lang=en" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter fa-2x"></i></a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram fa-2x"></i></a>
+    <footer class="white">
+        <a href="./contactUs.html" class="hover-light as-center">Contact Us</a>
+        <p class="as-center no-margin">Nana 2022 © All rights reserved</p>
+        <div class="footer-sns as-center">
+            <a href="https://web.whatsapp.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp white"></i></a>
+            <a href="https://twitter.com/?lang=en" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter white"></i></a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram white"></i></a>
         </div>
     </footer>
 </body>

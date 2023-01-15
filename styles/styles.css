@@ -105,6 +105,10 @@ h1 {
     flex-direction: row;
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
+
 .center {
     align-items: center;
 }
@@ -462,4 +466,49 @@ form textarea {
 
 .dashed-border {
     border: 1px dashed #361500
+}
+
+
+/* Estilos del Menu */
+
+.w-75 {
+    width: 75%;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+article {
+    height: 20vw;
+    width: 20vw;
+    margin: 1vw;
+    padding: 1.25vw;
+
+    background-color: white;
+    border: 3px solid #6e4227;
+    border-radius: 5px;
+
+    font-size: 1.5vw;
+    font-weight: 700;
+
+    transition: scale 0.15s;
+}
+
+article p {
+    color:black;
+    margin:0 1vw 0 1vw;
+    font-size: 16px;
+}
+
+article img {
+    width: 80%;
+    border-radius: 5px;
+}
+
+article:hover,
+article:focus {
+    scale: 1.15;
+    cursor: pointer;
+    border: 3px double #6e4227;
 }
