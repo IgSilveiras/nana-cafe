@@ -46,7 +46,8 @@ header nav ul {
     margin: 0 1.5vw 0 1.5vw;
 }
 
-.hover-light:hover {
+.hover-light:hover,
+.hover-light:focus {
     text-shadow: 1px 1px 8px white;
 }
 
@@ -68,7 +69,19 @@ header nav ul {
     align-self: center;
 }
 
+
 /* Estilos del Main */
+
+.bg-img {
+    background-image: url(../assets/images/shop-parallax.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    height: 13vw;
+    margin-bottom: 3vw;
+    text-shadow: black 2px 2px;
+    box-shadow: black 2px 2px 10px;
+}
 
 main {
     background: rgb(129,91,51);
@@ -88,11 +101,6 @@ main p {
 h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 10vw;
-}
-
-#est {
-    font-size: 1.25vw;
-    margin-bottom: 2vw;
 }
 
 .flex-column {
@@ -251,10 +259,10 @@ footer .fa-brands {
     grid-template-areas: 
     "sns login"
     "form form";
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 45% 45%;
     grid-template-rows: 30vh 50vh;
     gap: 5%;
-    margin: 4vh 7.5vw 0 7.5vw;
+    margin: 4vh 0 0 5%;
     padding-bottom: 5vh;
 }
 
@@ -282,7 +290,7 @@ footer .fa-brands {
     
     justify-content: center;
     background-color: #6d3513;
-    font-size: 16px;
+    font-size: 1.25vw;
     
     border-bottom: 2px dashed #361500;
     color:#EEC373;
@@ -295,17 +303,23 @@ footer .fa-brands {
 }
 
 .sns-content a {
-    font-size: 80px;
-    margin: 0 1vw 0 1vw;
+    font-size: 6vw;
+    margin: 0 2vw 0 2vw;
+}
+
+.sns-content a:hover, 
+.sns-content a:focus {
+    text-shadow: #6d3513 2px 2px 10px;
+    scale: 1.1;
 }
 
 .login-content p {
-    font-size: 42px;
+    font-size: 3vw;
     color:black;
 }
 
 .login-content a {
-    font-size: 32px;
+    font-size: 2.25vw;
     color: #EEC373;
     text-decoration: none;
 }
@@ -385,7 +399,7 @@ form textarea {
 }
 
 
-/* Estilos de los servicios */
+/* Estilos de los Servicios */
 
 
 .services-grid {
@@ -404,10 +418,10 @@ form textarea {
 
     background-color: #6d3513;
 
-    margin-top: 3vw;
-    margin-bottom: 1vw;
+    margin: 3vw 0 1vw 0;
     padding: 10px;
 }
+
 
 .services-grid h3 {
     font-size: 24px;
@@ -451,6 +465,15 @@ form textarea {
     grid-area: img3;
 }
 
+.expand {
+    transition: scale 0.75s;
+}
+
+.expand:hover,
+.expand:focus {
+    scale: 1.075;
+}
+
 .services-grid img {
     width: 100%;
     height: 100%;
@@ -479,6 +502,10 @@ form textarea {
     justify-content: center;
 }
 
+.padding-bottom {
+    padding-bottom: 2vw;
+}
+
 article {
     height: 20vw;
     width: 20vw;
@@ -489,7 +516,7 @@ article {
     border: 3px solid #6e4227;
     border-radius: 5px;
 
-    font-size: 1.5vw;
+    font-size: 1.25vw;
     font-weight: 700;
 
     transition: scale 0.15s;
@@ -498,7 +525,6 @@ article {
 article p {
     color:black;
     margin:0 1vw 0 1vw;
-    font-size: 16px;
 }
 
 article img {
