@@ -538,3 +538,112 @@ article:focus {
     cursor: pointer;
     border: 3px double #6e4227;
 }
+
+
+/* Estilos del Point Shop */
+
+.points-grid {
+    width: 90%;
+    display: grid;
+
+    grid-template-areas: 
+    "faq destacados"
+    "todos todos"; 
+    grid-template-columns: 2fr 4fr;
+
+
+    gap: 5px;
+    
+    padding: 5px;
+    margin-bottom: 2vw;
+}
+
+.points-grid h3 {
+    font-size: 1.5vw;
+    background-color: #6d3513;
+    color:#EEC373;
+    border-bottom: 1px dashed #361500;
+}
+
+.faq {
+    grid-area: faq;
+}
+
+.destacados {
+    grid-area: destacados;
+}
+
+.todos {
+    grid-area: todos;
+}
+
+.faq,
+.destacados,
+.todos {
+    background-color: #9d6f3a;
+}
+
+
+#pos-center {
+    margin: 0;
+    position: relative;
+    top: 30%;
+}
+
+.faq .btn {
+    position: relative;
+    top: 35%;
+}
+
+.btn {
+    padding: 10px 20px 10px 20px;
+    background-color: #58331c;
+    color:#EEC373;
+    margin-bottom: 1vw;
+}
+
+.btn:hover {
+    background-color: #361500;
+    color:#EEC373;
+}
+
+.btn-secondary {
+    background-color: #361500;
+}
+
+.btn-secondary:hover {
+    background-color: #58331c;
+}
+
+.modal-header {
+    background-color: #361500;
+    border-bottom: 1px solid #EEC373
+}
+
+.modal-content {
+    background: rgb(129,91,51);
+    background: linear-gradient(90deg, rgba(129,91,51,1) 0%, rgba(187,138,76,1) 35%, rgba(139,95,48,1) 92%);    
+}
+
+.modal-content li {
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+.modal-content p {
+    font-size: 1.25vw;
+    margin-bottom: 3vw;
+}
+
+.modal-footer {
+    background-color: #361500;
+    border-top: 1px solid #EEC373;
+}
+
+.modal-footer .btn {
+    border: 1px solid #EEC373
+}
+
+.destacados p {
+    margin: 0,
+}

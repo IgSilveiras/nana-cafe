@@ -15,6 +15,9 @@
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
     <!-- Estilos -->
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
@@ -36,24 +39,144 @@
     </header>
 
     <main>
-        <h1>NanaPoints</h1>
-        <div>
-            <h2>Points Store</h2>
+        <div class="flex-column center">
+            <h1>NanaPoints</h1>
+            <div class="points-grid">
+                <section class="faq solid-border">
+                    <h3>Info</h3>
+                    <p id="pos-center">Welcome to our point shop!</p>
+                
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Modal">
+                        FAQ
+                    </button>
+                
+                    <!-- Modal -->
+                    <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-3" id="ModalLabel">NanaPoints FAQ</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body flex-row">
+                                    <ul class="flex-column">
+                                        <li>What are NanaPoints?</li>
+                                        <p>They are our very own point system!</p>
 
-            <div>
-                <h3>Featured Items:</h3>
-                <!-- cupon de descuento -->
-                <!-- m espresso -->
-                <!-- m latte -->
-                <!-- m capuccino -->
-            </div>
+                                        <li>How do I earn NanaPoints?</li>
+                                        <p>You earn them by buying stuff in our shop! (You must have an <a href="./login.html">account</a> first). The amount of points you gain is equal to the price you paid * 100.</p>
 
-            <div>
-                <h3>All Items:</h3>
-                <!-- cupon de descuento -->
-                <!-- varios cafes de distintos tamaños -->
-                <!-- reserva gratis -->
-                <!-- souvenir mitai na stuff -->
+                                        <li>What do I do with them?</li>
+                                        <p>You can buy stuff from this page right here, our you can buy coffee at the shop and pay it only with points.</p>
+
+                                        <li>Do the points expire?</li>
+                                        <p>No. Money is temporal, but points are eternal.</p>
+
+                                        <li>I bought a gift card/discount coupon, does it expire?</li>
+                                        <p>Nope, once you buy it you can use it whenever you want.</p>
+                                        
+                                        <li>When you have discounts can I still buy with points?</li>
+                                        <p>Yes, but you will earn an amount according to the price you paid.</p>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+            
+                <section class="destacados solid-border">
+                    <h3>Featured Items:</h3>
+                    
+                    <div class="flex-row center">
+
+                        <article class="flex-column center">
+                            <img src="../assets/images/discount-coupon.jpg" alt="a discount coupon">
+                            <div class="flex-row space-between">
+                                <p class="no-margin">50% off Coupon</p>
+                                <p>1000p</p>
+                            </div>
+                        </article>
+                        
+                        <article class="flex-column center">
+                            <img src="../assets/images/gift-card-15.jpg" alt="a 15 dollar gift card">
+                            <div class="flex-row space-between">
+                                <p class="no-margin">15$ Gift Card</p>
+                                <p>1500p</p>
+                            </div>
+                        </article>
+                        
+                        <article class="flex-column center">
+                            <img src="../assets/images/gift-card-10.jpg" alt="a ten dollar gift card">
+                            <div class="flex-row space-between">
+                                <p class="no-margin">10$ Gift Card</p>
+                                <p>1000p</p>
+                            </div>
+                        </article>
+
+                    </div>
+
+                </section>
+            
+                <section class="todos solid-border">
+                    <h3>All Items:</h3>
+                    
+                    <div class="flex-row center jc-center wrap">
+
+                        <article class="flex-column center">
+                            <img src="../assets/images/gift-card-20.jpg" alt="a twenty-dollar gift card">
+                            <div class="flex-row space-between">
+                                <p class="no-margin">20$ Gift Card</p>
+                                <p>2000p</p>
+                            </div>
+                        </article>
+
+                        <article class="flex-column center">
+                            <img src="../assets/images/gift-card-15.jpg" alt="a 15 dollar gift card">
+                            <div class="flex-row space-between">
+                                <p class="no-margin">15$ Gift Card</p>
+                                <p>1500p</p>
+                            </div>
+                        </article>
+                        
+                        <article class="flex-column center">
+                            <img src="../assets/images/gift-card-10.jpg" alt="a ten dollar gift card">
+                            <div class="flex-row space-between">
+                                <p class="no-margin">10$ Gift Card</p>
+                                <p>1000p</p>
+                            </div>
+                        </article>
+
+                        <article class="flex-column center">
+                            <img src="../assets/images/discount-coupon.jpg" alt="a discount coupon">
+                            <div class="flex-row space-between">
+                                <p class="no-margin">50% off Coupon</p>
+                                <p>1000p</p>
+                            </div>
+                        </article>
+
+                        <article class="flex-column center">
+                            <img src="../assets/images/coasters.jpg" alt="a bunch of coasters">
+                            <div class="flex-row space-between">
+                                <p class="no-margin">Cafe Coaster (Your pick)</p>
+                                <p>350p</p>
+                            </div>
+                        </article>
+
+                        <article class="flex-column center">
+                            <p>Free Reservation!</p>
+                            <div class="flex-row space-between">
+                                <p class="no-margin">50% off Coupon</p>
+                                <p>1000p</p>
+                            </div>
+                        </article>
+                        
+                    </div>
+                </section>
             </div>
         </div>
     </main>
@@ -67,5 +190,8 @@
             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram white"></i></a>
         </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
