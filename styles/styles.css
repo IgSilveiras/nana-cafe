@@ -812,13 +812,13 @@ article:focus {
     }
 }
 
-@media screen and (max-width: 345px) {
+@media screen and (max-width: 347px) {
     nav ul li a{
         font-size: 12px;
     }
 
     .fa-circle-user {
-        margin-right: 16px;
+        margin-right: 14px;
     }
 
     h1 {
