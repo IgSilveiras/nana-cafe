@@ -175,6 +175,8 @@ main {
     font-size: 1.15vw;
     text-align: center;
     cursor: default;
+
+    min-height: 81vh;
 }
 
 main p {
@@ -190,7 +192,7 @@ h1 {
     height: 30vw;
 }
 
-.location h3 {
+.location h2 {
     font-size: 36px;
     margin-bottom: 1.5vw;
 }
@@ -394,7 +396,6 @@ form textarea {
 
 .body-template {
     margin-top: 4vh;
-    height: 53vh;
 }
 
 .body-template form {
@@ -418,7 +419,7 @@ form textarea {
 
 #register fieldset {
     border: 1px dashed #361500;
-    padding: 2vh 0 2vh 0;
+    padding: 1vw 0 1vw 0;
 }
 
 #register form {
@@ -629,4 +630,214 @@ article:focus {
 
 .points-grid img {
     height: 14vw;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+    
+    .fa-circle-user {
+        font-size: 40px;
+    }
+    
+    nav {
+        width: 100%;
+        margin-left: 12.5vw;
+        font-size: 17px;
+    }
+
+    .bg-img {
+        height: 18vw;
+        margin-bottom: 5vw;
+    }
+
+    h1 {
+        font-size: 13vw;
+    }
+
+    main {
+        font-size: 14px;
+    }
+    
+    .flex-column img {
+        height: 40vw;
+        min-height: 260px;
+    }
+
+    footer {
+        grid-template-columns: 25% 50% 25%;
+    }
+
+    footer .fa-brands {
+        font-size: 28px;
+        margin: 0 10px 0 10px;
+    }   
+
+    .body-template p {
+        font-size: 3vw;
+    }
+
+    #register form {
+        width: 90%;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    header {
+        height: 10vh;
+    }
+    
+    .logo {
+        height: 10vh;
+    }
+
+    nav {
+        font-size: 14px;
+        margin-left: 15vw;
+    }
+
+    .fa-circle-user {
+        font-size: 35px;
+        margin-bottom: 1vw;
+    }
+
+    main {
+        min-height: 83vh;
+    }
+    
+    .bg-img {
+        height: 24vw;
+    }
+
+    h1 {
+        font-size: 18vw;
+    }
+
+    footer {
+        grid-template-areas: 25% 30% 40%;
+    }
+
+    footer .fa-brands {
+        margin: 0 8px 0 8px;
+    }
+
+    #register form .flex-row {
+        flex-direction: column;
+        margin: 5px;
+    }
+
+}
+
+@media screen and (max-width: 470px) {
+
+    header {
+        grid-template-areas: 
+        "logo nada pfp"
+        "nav  nav  nav";
+
+        grid-template-columns: 30% 55% 15%;
+
+        height: 20vh;
+    }
+
+    .logo {
+        height: 13vh;
+    }
+
+    header nav {
+        margin:0;
+        justify-content: center;
+        align-items: flex-end;
+    }   
+
+    header nav ul {
+        height: 7vh;
+        flex-wrap: nowrap;
+        margin: 0;
+    }
+
+    li,
+    li a {
+        padding: 1.5vw;
+    }
+
+    .pfp {
+        margin-right: 5vw;
+    }
+
+    .bg-img {
+        min-height: 105px;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    main {
+        font-size: 12px;
+    }
+
+    .flex-column img {
+        height: 30vw;
+        min-height: 180px;
+    }
+
+    .location h2 {
+        font-size: 28px;
+    }
+
+    .location iframe {
+        height: 30vh;
+    }
+
+    .body-template p {
+        font-size: 4vw;
+    }
+
+}
+
+@media screen and (max-width: 390px) {
+    footer {
+        grid-template-columns: 25% 40% 35%;
+    }
+
+    footer a {
+        font-size: 11px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    nav ul li a{
+        font-size: 12px;
+    }
+
+    .fa-circle-user {
+        margin-right: 16px;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    footer .fa-brands {
+        margin: 0 4px 0 4px;
+    }
+
+    .body-template p {
+        font-size: 16px;
+    }
+
+    .body-template div input {
+        width: 75%;
+    }
+
+    #register input {
+        width: 50%;
+    }
 }
