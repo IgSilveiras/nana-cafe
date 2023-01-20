@@ -376,6 +376,10 @@ form textarea {
     font-size: 32px;
 }
 
+.body-template a:visited {
+    color:#0066cc;
+}
+
 
 /* Estilos del Register */
 
@@ -645,5 +649,9 @@ article:focus {
 }
 
 .destacados p {
-    margin: 0,
+    margin: 0;
+}
+
+.points-grid img {
+    height: 14vw;
 }
