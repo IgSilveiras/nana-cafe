@@ -682,6 +682,15 @@ article:focus {
         width: 90%;
         font-size: 14px;
     }
+
+    .menu img {
+        height: 30vw;
+        min-height: 0;
+    }
+
+    .menu article p {
+        font-size: 2vw;
+    }
 }
 
 @media screen and (max-width: 580px) {
@@ -726,6 +735,15 @@ article:focus {
     #register form .flex-row {
         flex-direction: column;
         margin: 5px;
+    }
+
+    .menu article {
+        min-width: 30vw;
+        min-height: 30vw;
+    }
+
+    .menu article p {
+        font-size: 3vw;
     }
 
 }
@@ -796,6 +814,11 @@ article:focus {
         font-size: 4vw;
     }
 
+    .menu img {
+        height: 30vw;
+        min-height: 0;
+    }
+
 }
 
 @media screen and (max-width: 390px) {
@@ -812,21 +835,23 @@ article:focus {
     }
 }
 
-@media screen and (max-width: 347px) {
+@media screen and (max-width: 355px) {
     nav ul li a{
         font-size: 10px;
     }
 
     .fa-circle-user {
         margin-right: 14px;
+        font-size: 24px;
     }
 
     h1 {
-        font-size: 65px;
+        font-size: 20vw;
+        min-height: 40px;
     }
 
     .flex-column img {
-        min-height: 150px;
+        min-height: 120px;
     }
 
     main {
@@ -848,4 +873,19 @@ article:focus {
     #register input {
         width: 50%;
     }
+    
+    .menu article {
+       min-width: 45vw;
+       min-height: 40vw; 
+    }
+
+    .menu article p {
+        font-size: 4vw;
+    }
+
+    .menu img {
+        height: 30vw;
+        min-height: 0;
+    }
+
 }
