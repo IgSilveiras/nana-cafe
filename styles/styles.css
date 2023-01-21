@@ -666,12 +666,12 @@ article:focus {
     }
 
     footer {
-        grid-template-columns: 25% 50% 25%;
+        grid-template-columns: 20% 45% 35%;
     }
 
     footer .fa-brands {
         font-size: 28px;
-        margin: 0 10px 0 10px;
+        margin: 0 1vw 0 1vw;
     }   
 
     .body-template p {
@@ -716,11 +716,11 @@ article:focus {
     }
 
     footer {
-        grid-template-areas: 25% 30% 40%;
+        grid-template-columns: 25% 40% 35%;
     }
 
     footer .fa-brands {
-        margin: 0 8px 0 8px;
+        margin: 0 0 0 16px;
     }
 
     #register form .flex-row {
@@ -800,7 +800,7 @@ article:focus {
 
 @media screen and (max-width: 390px) {
     footer {
-        grid-template-columns: 25% 40% 35%;
+        grid-template-columns: 25% 35% 40%;
     }
 
     footer a {
@@ -814,7 +814,7 @@ article:focus {
 
 @media screen and (max-width: 347px) {
     nav ul li a{
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .fa-circle-user {
@@ -822,7 +822,15 @@ article:focus {
     }
 
     h1 {
-        font-size: 70px;
+        font-size: 65px;
+    }
+
+    .flex-column img {
+        min-height: 150px;
+    }
+
+    main {
+        font-size: 11px;
     }
 
     footer .fa-brands {
