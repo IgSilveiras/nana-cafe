@@ -104,6 +104,10 @@
     padding-bottom: 2vw;
 }
 
+.no-margin {
+    margin: 0;
+}
+
 /* Estilos del Header */
 
 header {
@@ -135,7 +139,9 @@ header nav ul {
     display: flex;
     flex-flow: row wrap;
     list-style: none;
-    margin: 0 10vw 0 0;
+
+    margin: 0;
+    padding: 0;
 }
 
 .pfp { 
@@ -146,10 +152,6 @@ header nav ul {
 
 .fa-circle-user {
     font-size: 3.5vw;
-}
-
-.no-margin {
-    margin: 0;
 }
 
 
@@ -251,8 +253,8 @@ footer .fa-brands {
     "pic txt"
     "credit txt";
 
-    grid-template-rows: 35vw 2.75vw;
-    grid-template-columns: 24.4vw auto;
+    grid-template-rows: 57vh 2.75vw;
+    grid-template-columns: 45vh auto;
 
     margin: 7.5vh 7.5vw 7.5vh 7.5vw;
     border: 3px solid #361500;
@@ -262,7 +264,6 @@ footer .fa-brands {
     grid-area: pic;
     width: 100%;
     height: 100%;
-    justify-self: end;
     border-right: 2px dashed #361500;
 }
 
@@ -278,7 +279,7 @@ footer .fa-brands {
 
 .subtitle {
     font-family: 'Dancing Script', cursive;
-    font-size: 100px;
+    font-size: 9vw;
     margin-bottom: 3vh;
 }
 
@@ -544,8 +545,8 @@ article:focus {
 
     grid-template-areas: 
     "faq destacados"
-    "todos todos"; 
-    grid-template-columns: 2fr 4fr;
+    "todos todos";
+    grid-template-columns: 2fr 6fr;
 
 
     gap: 5px;
@@ -582,7 +583,8 @@ article:focus {
 }
 
 .btn {
-    padding: 10px 20px 10px 20px;
+    padding: 1vw 2vw 1vw 2vw;
+    font-size: 1.5vw;
     background-color: #58331c;
     color:#EEC373;
     margin-bottom: 1vw;
@@ -637,13 +639,13 @@ article:focus {
 
 @media screen and (max-width: 768px) {
     
+    /* Header */
     .fa-circle-user {
         font-size: 40px;
     }
     
     nav {
         width: 100%;
-        margin-left: 12.5vw;
         font-size: 17px;
     }
 
@@ -656,6 +658,8 @@ article:focus {
         font-size: 13vw;
     }
 
+
+    /* Main */
     main {
         font-size: 14px;
     }
@@ -665,6 +669,8 @@ article:focus {
         min-height: 260px;
     }
 
+
+    /* Footer */
     footer {
         grid-template-columns: 20% 45% 35%;
     }
@@ -674,6 +680,8 @@ article:focus {
         margin: 0 1vw 0 1vw;
     }   
 
+
+    /* Login/Register */
     .body-template p {
         font-size: 3vw;
     }
@@ -683,6 +691,8 @@ article:focus {
         font-size: 14px;
     }
 
+
+    /* Menu */
     .menu img {
         height: 30vw;
         min-height: 0;
@@ -691,9 +701,55 @@ article:focus {
     .menu article p {
         font-size: 2vw;
     }
+
+
+    /* Point Shop */
+    .points-grid article {
+        height: fit-content;
+    }
+
+    .points-grid img {
+        height: 14vw;
+        min-height: 0;
+    }
+
+    .points-grid article p {
+        font-size: 1.5vw;
+    }
+
+    .modal-content li {
+        font-size: 3.5vw;
+    }
+
+    .modal-content p {
+        font-size: 2vw;
+        margin-bottom: 5vw;
+    }
+
+    .modal-footer .btn {
+        font-size: 1.75vw;
+    }
+
+
+    /* About Us */
+    .subtitle {
+        font-size: 10vw;
+    }
+
+    #credit,
+    .description {
+        font-size: 1.5vw;
+    }
+
+    .about-grid {
+        width: 90%;
+        margin-left: 5vw;
+    }
 }
 
 @media screen and (max-width: 580px) {
+
+    /* Header */
     header {
         height: 10vh;
     }
@@ -704,7 +760,6 @@ article:focus {
 
     nav {
         font-size: 14px;
-        margin-left: 15vw;
     }
 
     .fa-circle-user {
@@ -712,6 +767,8 @@ article:focus {
         margin-bottom: 1vw;
     }
 
+
+    /* Main */
     main {
         min-height: 83vh;
     }
@@ -724,6 +781,8 @@ article:focus {
         font-size: 18vw;
     }
 
+
+    /* Footer */
     footer {
         grid-template-columns: 25% 40% 35%;
     }
@@ -732,11 +791,15 @@ article:focus {
         margin: 0 0 0 16px;
     }
 
+
+    /* Login/Register */
     #register form .flex-row {
         flex-direction: column;
         margin: 5px;
     }
 
+
+    /* Menu */
     .menu article {
         min-width: 30vw;
         min-height: 30vw;
@@ -746,10 +809,89 @@ article:focus {
         font-size: 3vw;
     }
 
+
+    /* Point Shop */
+    .points-grid {
+        grid-template-areas:
+        "nada faq nada2"
+        "destacados destacados destacados"
+        "todos todos todos" ;
+
+        grid-template-columns: 25% 50% 25%;
+        grid-template-rows: 20vh auto auto;
+
+        gap: 10px;
+    }
+
+    .points-grid h2 {
+        font-size: 4vw;
+    }
+
+    .faq {
+        padding-bottom: 10vw;
+    }
+
+    #pos-center {
+        position: relative;
+        top: 10%;
+    }
+
+    .faq .btn {
+        position: relative;
+        top: 15%;
+
+        padding: 1.5vw 3vw 1.5vw 3vw;
+        font-size: 2vw;
+    }
+
+    .destacados .flex-row,
+    .todos .flex-row {
+        justify-content: center;
+    }
+
+    .destacados .flex-row:not(.space-between),
+    .todos .flex-row:not(.space-between){
+        flex-wrap: wrap;
+    }
+
+    .destacados article,
+    .todos article {
+        width: 40vw;
+        height: 30vw;
+    }
+
+    .destacados article img,
+    .todos article img {
+        width: 80%;
+        height: 90%;
+    }
+
+    .destacados article p,
+    .todos article p {
+        font-size: 2.5vw;
+    }
+
+
+    /* About Us */
+    .about-grid {
+        grid-template-rows: 42.75vh 4vw;
+        grid-template-columns: 33.75vh auto;
+    }
+
+    .subtitle {
+        font-size: 10vw;
+    }
+
+    #credit,
+    .description {
+        font-size: 1.75vw;
+    }
+
 }
 
 @media screen and (max-width: 470px) {
 
+    /* Header */
     header {
         grid-template-areas: 
         "logo nada pfp"
@@ -765,7 +907,6 @@ article:focus {
     }
 
     header nav {
-        margin:0;
         justify-content: center;
         align-items: flex-end;
     }   
@@ -773,7 +914,6 @@ article:focus {
     header nav ul {
         height: 7vh;
         flex-wrap: nowrap;
-        margin: 0;
     }
 
     li,
@@ -785,6 +925,8 @@ article:focus {
         margin-right: 5vw;
     }
 
+
+    /* Main */
     .bg-img {
         min-height: 105px;
     }
@@ -810,18 +952,95 @@ article:focus {
         height: 30vh;
     }
 
+
+    /* Login/Register */
     .body-template p {
         font-size: 4vw;
     }
 
+
+    /* Menu */
     .menu img {
         height: 30vw;
         min-height: 0;
     }
 
+
+    /* Point Shop */
+    .destacados .flex-row,
+    .todos .flex-row {
+        justify-content: center;
+    }
+
+    .destacados article,
+    .todos article {
+        width: 40vw;
+        height: 35vw;
+    }
+
+    .destacados article img,
+    .todos article img {
+        min-height: 0;
+
+        width: 80%;
+        height: 90%;
+    }
+
+    .destacados article p,
+    .todos article p {
+        font-size: 2.5vw;
+    }
+
+    .modal-content li {
+        font-size: 5vw;
+    }
+
+    .modal-content p {
+        font-size: 3.5vw;
+    }
+
+    .modal-footer .btn {
+        font-size: 2.5vw;
+    }
+
+
+    /* About Us */
+    .about-grid {
+        grid-template-areas: 
+        "pic"
+        "credit"
+        "txt";
+
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+    .mumei-pic {
+        height: 50vh;
+        width: auto;
+
+        justify-self: center;
+        border: none;
+    }
+
+    #credit {
+        text-align: center;
+        border: none;
+        font-size: 3vw;
+        margin-bottom: 5vw;
+    }
+
+    .subtitle {
+        font-size: 15vw;
+    }
+
+    .description {
+        font-size: 2.5vw;
+    }
 }
 
 @media screen and (max-width: 390px) {
+    /* Footer */
     footer {
         grid-template-columns: 25% 35% 40%;
     }
@@ -833,18 +1052,37 @@ article:focus {
     footer p {
         font-size: 10px;
     }
+
+
+    /* Point Shop */
+    .points-grid {
+        grid-template-columns: 20% 55% 20%;
+    }
+
+    .points-grid article {
+        min-width: 60vw;
+        min-height: 50vw;
+    }
+
+    .points-grid article p {
+        font-size: 10px;
+    }
 }
 
 @media screen and (max-width: 355px) {
+
+    /* Header */
     nav ul li a{
         font-size: 10px;
     }
 
     .fa-circle-user {
         margin-right: 14px;
-        font-size: 24px;
+        font-size: 28px;
     }
 
+
+    /* Main */
     h1 {
         font-size: 20vw;
         min-height: 40px;
@@ -858,10 +1096,14 @@ article:focus {
         font-size: 11px;
     }
 
+    
+    /* Footer */
     footer .fa-brands {
         margin: 0 4px 0 4px;
     }
 
+
+    /* Login/Register */
     .body-template p {
         font-size: 16px;
     }
@@ -874,6 +1116,8 @@ article:focus {
         width: 50%;
     }
     
+
+    /* Menu */
     .menu article {
        min-width: 45vw;
        min-height: 40vw; 
@@ -888,4 +1132,18 @@ article:focus {
         min-height: 0;
     }
 
+
+    /* Point Shop */
+    .faq .btn {
+        min-width: 50px;
+        min-height: 30px;
+
+        font-size: 14px;
+    }
+
+
+    /* About Us */
+    .description {
+        font-size: 3.25vw;
+    }
 }
