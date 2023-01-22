@@ -285,6 +285,7 @@ footer .fa-brands {
 
 .accordion {
     padding-bottom: 3vh;
+    width: 75%;
 }
 
 .accordion-button,
@@ -745,6 +746,14 @@ article:focus {
         width: 90%;
         margin-left: 5vw;
     }
+
+    .accordion img {
+        width: 95% ;
+    }
+
+    #mumei-cafe {
+        width: auto;
+    }
 }
 
 @media screen and (max-width: 580px) {
@@ -796,6 +805,10 @@ article:focus {
     #register form .flex-row {
         flex-direction: column;
         margin: 5px;
+    }
+
+    .body-template input {
+        width: 75%;
     }
 
 
@@ -885,6 +898,10 @@ article:focus {
     #credit,
     .description {
         font-size: 1.75vw;
+    }
+
+    .accordion {
+        width: 90%;
     }
 
 }
@@ -1066,6 +1083,12 @@ article:focus {
 
     .points-grid article p {
         font-size: 10px;
+    }
+
+
+    /* About us */
+    .accordion {
+        width: 100%;
     }
 }
 
