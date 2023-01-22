@@ -777,6 +777,27 @@ article:focus {
     .form-container {
         font-size: 2.5vw;
     }
+
+
+    /* Servicios */
+    .services-grid {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+
+    .services-grid h3 {
+        font-size: 3vw;
+    }
+
+    .services-grid p {
+        font-size: 1.75vw;
+    }
+
+    .services-grid img {
+        min-height: 0;
+        height: 20vw;
+        width: 20vw;
+    }
 }
 
 @media screen and (max-width: 580px) {
@@ -927,6 +948,37 @@ article:focus {
         width: 90%;
     }
 
+
+    /* Servicios */
+    .services-grid {
+        grid-template-areas: 
+        "autoservice autoservice coffee coffee"
+        "img1        img1        img3   img3"
+        "custom      custom      custom custom"
+        "img2       img2        img2   img2"
+        "delivery  delivery      points points";
+        
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+
+    .services-grid h3 {
+        font-size: 4vw;
+    }
+
+    .services-grid p {
+        font-size: 2vw;
+        padding-bottom: 2vw;
+    }
+
+    .services-grid img {
+        width: 100%;
+        height: 30vw;
+    }
+
+    #img2 img {
+        height: 60vw;
+    }
 }
 
 @media screen and (max-width: 470px) {
@@ -1128,6 +1180,11 @@ article:focus {
         margin-top: 5vw;
     }
 
+
+    /* Servicios */
+    .services-grid img {
+        min-height: 0;
+    }
 }
 
 @media screen and (max-width: 390px) {
@@ -1163,6 +1220,28 @@ article:focus {
     /* About us */
     .accordion {
         width: 100%;
+    }
+
+    /* Servicios */
+    .services-grid {
+        grid-template-areas: 
+        "autoservice autoservice"
+        "coffee coffee"
+        "img1 img3"
+        "custom custom"
+        "img2 img2"
+        "delivery delivery"
+        "points points";
+
+        gap:10px
+    }
+
+    .services-grid h3 {
+        font-size: 6vw;
+    }
+
+    .services-grid p {
+        font-size: 3vw;
     }
 }
 
