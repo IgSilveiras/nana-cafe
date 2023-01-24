@@ -118,7 +118,7 @@ header {
 
     display: grid;
     grid-template-areas: "logo nav pfp";
-    grid-template-columns: 20% 70% 10%;
+    grid-template-columns: 20% 60% 20%;
 
     height: 12vh;
 
@@ -147,7 +147,8 @@ header nav ul {
 .pfp { 
     grid-area: pfp;
     text-align: center;
-    align-self: center;
+    justify-self: flex-end;
+    margin-right: 3vw;
 }
 
 .fa-circle-user {
@@ -647,6 +648,7 @@ article:focus {
     nav {
         width: 100%;
         font-size: 17px;
+        margin-left: 10vw;
     }
 
     .bg-img {
@@ -1001,6 +1003,7 @@ article:focus {
     header nav {
         justify-content: center;
         align-items: flex-end;
+        margin: 0;
     }   
 
     header nav ul {
