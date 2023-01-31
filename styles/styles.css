@@ -378,7 +378,7 @@ article {
   background-color: white;
   border: 3px solid #6e4227;
   border-radius: 5px;
-  font-size: 1.25vw;
+  font-size: 1.2vw;
   font-weight: 700;
   transition: scale 0.15s;
 }
@@ -387,7 +387,7 @@ article p {
   margin: 0 1vw 0 1vw;
 }
 article img {
-  width: 80%;
+  width: 90%;
   border-radius: 5px;
 }
 article:hover, article:focus {
@@ -573,11 +573,12 @@ article:hover, article:focus {
   }
   /* Menu */
   .menu img {
+    width: 80%;
     height: 30vw;
     min-height: 0;
   }
   .menu article p {
-    font-size: 2vw;
+    font-size: 1.75vw;
   }
   /* Point Shop */
   .points-grid article {
@@ -967,6 +968,18 @@ header nav ul li a {
   .services-grid p {
     font-size: 3vw;
   }
+  /* Menu */
+  .menu article {
+    min-width: 75vw;
+    min-height: 55vw;
+  }
+  .menu article p {
+    font-size: 4vw;
+  }
+  .menu img {
+    height: 45vw;
+    min-height: 0;
+  }
 }
 @media screen and (max-width: 355px) {
   /* Header */
@@ -1001,18 +1014,6 @@ header nav ul li a {
   }
   #register input {
     width: 50%;
-  }
-  /* Menu */
-  .menu article {
-    min-width: 45vw;
-    min-height: 40vw;
-  }
-  .menu article p {
-    font-size: 4vw;
-  }
-  .menu img {
-    height: 30vw;
-    min-height: 0;
   }
   /* Point Shop */
   .faq .btn {

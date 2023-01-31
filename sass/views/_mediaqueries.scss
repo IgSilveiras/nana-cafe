@@ -57,12 +57,13 @@
     /* Menu */
     .menu {
         img {
+            width: 80%;
             height: 30vw;
             min-height: 0;
         }
         
         article p {
-            font-size: 2vw;
+            font-size: 1.75vw;
         }
     }
         
@@ -635,6 +636,25 @@
             font-size: 3vw;
         }
     }
+
+    /* Menu */
+    .menu {
+
+        article {
+            min-width: 75vw;
+            min-height: 55vw; 
+            
+            p {
+                font-size: 4vw;
+            }
+        }
+        
+        img {
+            height: 45vw;
+            min-height: 0;
+        }
+    }
+    
 }
 
 @media screen and (max-width: 355px) {
@@ -685,25 +705,6 @@
 
     #register input {
         width: 50%;
-    }
-    
-
-    /* Menu */
-    .menu {
-
-        article {
-            min-width: 45vw;
-            min-height: 40vw; 
-            
-            p {
-                font-size: 4vw;
-            }
-        }
-        
-        img {
-            height: 30vw;
-            min-height: 0;
-        }
     }
 
 
