@@ -1,0 +1,44 @@
+header {
+    position: sticky;
+    top:0;
+
+    background-color: #361500;
+
+    display: grid; 
+    grid-template-areas: "logo nav pfp";
+    grid-template-columns: 20% 60% 20%;
+
+    height: 12vh;
+
+    z-index: 10;
+}
+
+header nav {
+    grid-area: nav;
+    justify-self: center;
+}
+
+.logo {
+    height: 12vh;
+    grid-area: logo;
+}
+
+header nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+.pfp { 
+    grid-area: pfp;
+    text-align: center;
+    justify-self: flex-end;
+    margin-right: 3vw;
+}
+
+.fa-circle-user {
+    font-size: 3.5vw;
+}

@@ -1,0 +1,64 @@
+.services-grid {
+    display: grid;
+    width: 85%;
+
+    grid-template-areas: 
+    "autoservice coffee     coffee coffee"
+    "autoservice custom     custom img1"
+    "img2        custom     custom img3"
+    "delivery    delivery   points points";
+
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    grid-template-rows: 14vw 14vw 14vw 14vw;
+    gap: 5px;
+
+    margin: 3vw 0 1vw 0;
+    padding: 10px;
+}
+
+
+.services-grid h3 {
+    font-size: 24px;
+    margin-bottom: 1vw;
+}
+
+.services-grid p {
+    width: 90%;
+}
+
+.autoservice {
+    grid-area: autoservice;
+}
+
+.coffee {
+    grid-area: coffee;
+}
+
+.delivery {
+    grid-area: delivery;
+}
+
+.points {
+    grid-area: points;
+}
+
+.custom {
+    grid-area: custom;
+}
+
+#img1 {
+    grid-area: img1;
+}
+
+#img2 {
+    grid-area: img2;
+}
+
+#img3 {
+    grid-area: img3;
+}
+
+.services-grid img {
+    width: 100%;
+    height: 100%;
+}

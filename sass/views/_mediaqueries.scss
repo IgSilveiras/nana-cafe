@@ -1,0 +1,694 @@
+@media screen and (max-width: 768px) {
+    
+    /* Header */
+    .fa-circle-user {
+        font-size: 40px;
+    }
+    
+    nav {
+        width: 100%;
+        font-size: 17px;
+        margin-left: 10vw;
+    }
+
+    .bg-img {
+        height: 18vw;
+        margin-bottom: 5vw;
+    }
+
+    h1 {
+        font-size: 13vw;
+    }
+
+
+    /* Main */
+    main {
+        font-size: 14px;
+    }
+    
+    .flex-column img {
+        height: 40vw;
+        min-height: 260px;
+    }
+
+
+    /* Footer */
+    footer {
+        grid-template-columns: 20% 45% 35%;
+    }
+
+    footer .fa-brands {
+        font-size: 28px;
+        margin: 0 1vw 0 1vw;
+    }   
+
+
+    /* Login/Register */
+    .body-template p {
+        font-size: 3vw;
+    }
+
+    #register form {
+        width: 90%;
+        font-size: 14px;
+    }
+
+
+    /* Menu */
+    .menu img {
+        height: 30vw;
+        min-height: 0;
+    }
+
+    .menu article p {
+        font-size: 2vw;
+    }
+
+
+    /* Point Shop */
+    .points-grid article {
+        height: fit-content;
+    }
+
+    .points-grid img {
+        height: 14vw;
+        min-height: 0;
+    }
+
+    .points-grid article p {
+        font-size: 1.5vw;
+    }
+
+    .modal-content li {
+        font-size: 3.5vw;
+    }
+
+    .modal-content p {
+        font-size: 2vw;
+        margin-bottom: 5vw;
+    }
+
+    .modal-footer .btn {
+        font-size: 1.75vw;
+    }
+
+
+    /* About Us */
+    .subtitle {
+        font-size: 10vw;
+    }
+
+    #credit,
+    .description {
+        font-size: 1.5vw;
+    }
+
+    .about-grid {
+        width: 90%;
+        margin-left: 5vw;
+    }
+
+    .accordion img {
+        width: 95% ;
+    }
+
+    #mumei-cafe {
+        width: auto;
+    }
+
+
+    /* Contacto */
+    .sns-subtitle,
+    .login-subtitle,
+    .form-subtitle {
+        font-size: 2vw;
+    }
+
+    .sns-content a {
+        font-size: 7.5vw;
+    }
+
+    .login-content p {
+        font-size: 4vw;
+    }
+
+    .login-content a {
+        font-size: 3vw;
+    }
+
+    .form-container {
+        font-size: 2.5vw;
+    }
+
+
+    /* Servicios */
+    .services-grid {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+
+    .services-grid h3 {
+        font-size: 3vw;
+    }
+
+    .services-grid p {
+        font-size: 1.75vw;
+    }
+
+    .services-grid img {
+        min-height: 0;
+        height: 20vw;
+        width: 20vw;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    /* Header */
+    header {
+        height: 10vh;
+    }
+    
+    .logo {
+        height: 10vh;
+    }
+
+    nav {
+        font-size: 14px;
+    }
+
+    .fa-circle-user {
+        font-size: 35px;
+        margin-bottom: 1vw;
+    }
+
+
+    /* Main */
+    main {
+        min-height: 83vh;
+    }
+    
+    .bg-img {
+        height: 24vw;
+    }
+
+    h1 {
+        font-size: 18vw;
+    }
+
+
+    /* Footer */
+    footer {
+        grid-template-columns: 25% 40% 35%;
+    }
+
+    footer .fa-brands {
+        margin: 0 0 0 16px;
+    }
+
+
+    /* Login/Register */
+    #register form .flex-row {
+        flex-direction: column;
+        margin: 5px;
+    }
+
+    .body-template input {
+        width: 75%;
+    }
+
+
+    /* Menu */
+    .menu article {
+        min-width: 30vw;
+        min-height: 30vw;
+    }
+
+    .menu article p {
+        font-size: 3vw;
+    }
+
+
+    /* Point Shop */
+    .points-grid {
+        grid-template-areas:
+        "nada faq nada2"
+        "destacados destacados destacados"
+        "todos todos todos" ;
+
+        grid-template-columns: 25% 50% 25%;
+        grid-template-rows: 20vh auto auto;
+
+        gap: 10px;
+    }
+
+    .points-grid h2 {
+        font-size: 4vw;
+    }
+
+    .faq {
+        padding-bottom: 10vw;
+    }
+
+    #pos-center {
+        position: relative;
+        top: 10%;
+    }
+
+    .faq .btn {
+        position: relative;
+        top: 15%;
+
+        padding: 1.5vw 3vw 1.5vw 3vw;
+        font-size: 2vw;
+    }
+
+    .destacados .flex-row,
+    .todos .flex-row {
+        justify-content: center;
+    }
+
+    .destacados .flex-row:not(.space-between),
+    .todos .flex-row:not(.space-between){
+        flex-wrap: wrap;
+    }
+
+    .destacados article,
+    .todos article {
+        width: 40vw;
+        height: 30vw;
+    }
+
+    .destacados article img,
+    .todos article img {
+        width: 80%;
+        height: 90%;
+    }
+
+    .destacados article p,
+    .todos article p {
+        font-size: 2.5vw;
+    }
+
+
+    /* About Us */
+    .about-grid {
+        grid-template-rows: 42.75vh 4vw;
+        grid-template-columns: 33.75vh auto;
+    }
+
+    .subtitle {
+        font-size: 10vw;
+    }
+
+    #credit,
+    .description {
+        font-size: 1.75vw;
+    }
+
+    .accordion {
+        width: 90%;
+    }
+
+
+    /* Servicios */
+    .services-grid {
+        grid-template-areas: 
+        "autoservice autoservice coffee coffee"
+        "img1        img1        img3   img3"
+        "custom      custom      custom custom"
+        "img2       img2        img2   img2"
+        "delivery  delivery      points points";
+        
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+
+    .services-grid h3 {
+        font-size: 4vw;
+    }
+
+    .services-grid p {
+        font-size: 2vw;
+        padding-bottom: 2vw;
+    }
+
+    .services-grid img {
+        width: 100%;
+        height: 30vw;
+    }
+
+    #img2 img {
+        height: 60vw;
+    }
+}
+
+@media screen and (max-width: 470px) {
+
+    /* Header */
+    header {
+        grid-template-areas: 
+        "logo nada pfp"
+        "nav  nav  nav";
+
+        grid-template-columns: 30% 55% 15%;
+
+        height: 20vh;
+    }
+
+    .logo {
+        height: 13vh;
+    }
+
+    header nav {
+        justify-content: center;
+        align-items: flex-end;
+        margin: 0;
+    }   
+
+    header nav ul {
+        height: 7vh;
+        flex-wrap: nowrap;
+    }
+
+    li,
+    li a {
+        padding: 1.5vw;
+    }
+
+    .pfp {
+        margin-right: 5vw;
+    }
+
+
+    /* Main */
+    .bg-img {
+        min-height: 105px;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    main {
+        font-size: 12px;
+    }
+
+    .flex-column img {
+        height: 30vw;
+        min-height: 180px;
+    }
+
+    .location h2 {
+        font-size: 28px;
+    }
+
+    .location iframe {
+        height: 30vh;
+    }
+
+
+    /* Login/Register */
+    .body-template p {
+        font-size: 4vw;
+    }
+
+
+    /* Menu */
+    .menu img {
+        height: 30vw;
+        min-height: 0;
+    }
+
+
+    /* Point Shop */
+    .destacados .flex-row,
+    .todos .flex-row {
+        justify-content: center;
+    }
+
+    .destacados article,
+    .todos article {
+        width: 40vw;
+        height: 35vw;
+    }
+
+    .destacados article img,
+    .todos article img {
+        min-height: 0;
+
+        width: 80%;
+        height: 90%;
+    }
+
+    .destacados article p,
+    .todos article p {
+        font-size: 2.5vw;
+    }
+
+    .modal-content li {
+        font-size: 5vw;
+    }
+
+    .modal-content p {
+        font-size: 3.5vw;
+    }
+
+    .modal-footer .btn {
+        font-size: 2.5vw;
+    }
+
+
+    /* About Us */
+    .about-grid {
+        grid-template-areas: 
+        "pic"
+        "credit"
+        "txt";
+
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+    .mumei-pic {
+        height: 50vh;
+        width: auto;
+
+        justify-self: center;
+        border: none;
+    }
+
+    #credit {
+        text-align: center;
+        border: none;
+        font-size: 3vw;
+        margin-bottom: 5vw;
+    }
+
+    .subtitle {
+        font-size: 15vw;
+    }
+
+    .description {
+        font-size: 2.5vw;
+    }
+
+
+    /* Contacto */
+    .contact-grid-parent {
+        grid-template-areas: 
+        "sns"
+        "login"
+        "form";
+
+        grid-template-columns: 90%;
+        grid-template-rows: auto;
+
+        margin-left: 10%;
+        padding-bottom: 16vh;
+    }
+
+    .sns-subtitle,
+    .login-subtitle,
+    .form-subtitle {
+        font-size: 3.5vw;
+    }
+
+    .sns-content a {
+        font-size: 15vw;
+        margin: 5vw;
+    }
+
+    .login-content p {
+        font-size: 10vw;
+    }
+
+    .login-content a {
+        font-size: 8vw;
+    }
+
+    .form-container .flex-row {
+        flex-direction: column;
+    }
+
+    .form-container {
+        padding-bottom: 2vh;
+    }
+
+    .form-content {
+        margin-top: 3vw;
+    }
+
+    form textarea {
+        margin-top: 5vw;
+    }
+
+
+    /* Servicios */
+    .services-grid img {
+        min-height: 0;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    /* Footer */
+    footer {
+        grid-template-columns: 25% 35% 40%;
+    }
+
+    footer a {
+        font-size: 11px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+
+
+    /* Point Shop */
+    .points-grid {
+        grid-template-columns: 20% 55% 20%;
+    }
+
+    .points-grid article {
+        min-width: 60vw;
+        min-height: 50vw;
+    }
+
+    .points-grid article p {
+        font-size: 10px;
+    }
+
+
+    /* About us */
+    .accordion {
+        width: 100%;
+    }
+
+    /* Servicios */
+    .services-grid {
+        grid-template-areas: 
+        "autoservice autoservice"
+        "coffee coffee"
+        "img1 img3"
+        "custom custom"
+        "img2 img2"
+        "delivery delivery"
+        "points points";
+
+        gap:10px
+    }
+
+    .services-grid h3 {
+        font-size: 6vw;
+    }
+
+    .services-grid p {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 355px) {
+
+    /* Header */
+    nav ul li a{
+        font-size: 10px;
+    }
+
+    .fa-circle-user {
+        margin-right: 14px;
+        font-size: 28px;
+    }
+
+
+    /* Main */
+    h1 {
+        font-size: 20vw;
+        min-height: 40px;
+    }
+
+    .flex-column img {
+        min-height: 120px;
+    }
+
+    main {
+        font-size: 11px;
+    }
+
+    
+    /* Footer */
+    footer .fa-brands {
+        margin: 0 4px 0 4px;
+    }
+
+
+    /* Login/Register */
+    .body-template p {
+        font-size: 16px;
+    }
+
+    .body-template div input {
+        width: 75%;
+    }
+
+    #register input {
+        width: 50%;
+    }
+    
+
+    /* Menu */
+    .menu article {
+       min-width: 45vw;
+       min-height: 40vw; 
+    }
+
+    .menu article p {
+        font-size: 4vw;
+    }
+
+    .menu img {
+        height: 30vw;
+        min-height: 0;
+    }
+
+
+    /* Point Shop */
+    .faq .btn {
+        min-width: 50px;
+        min-height: 30px;
+
+        font-size: 14px;
+    }
+
+
+    /* About Us */
+    .description {
+        font-size: 3.25vw;
+    }
+
+
+    /* Contacto */
+    .form-content {
+        font-size: 12px;
+    }
+}

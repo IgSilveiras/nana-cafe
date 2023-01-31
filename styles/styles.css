@@ -1,1334 +1,1064 @@
 * {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-/* Clases */
-
 .bgc-1 {
-    background-color: #361500;
+  background-color: #361500;
 }
 
 .bgc-2 {
-    background-color: #6d3513;
+  background-color: #6d3513;
 }
 
 .bgc-3 {
-    background-color: #9d6f3a;
+  background-color: #9d6f3a;
 }
 
 .beige {
-    color: #EEC373;
+  color: #EEC373;
 }
 
 .w-75 {
-    width: 75%;
+  width: 75%;
 }
 
 .flex-column {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .flex-row {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .wrap {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .center {
-    align-items: center;
+  align-items: center;
 }
 
 .jc-center {
-    justify-content: center;
+  justify-content: center;
 }
 
-.hover-light{
-    text-decoration: none;
-    color: #EEC373;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    margin: 0 1.5vw 0 1.5vw;
+.hover-light {
+  text-decoration: none;
+  color: #EEC373;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  margin: 0 1.5vw 0 1.5vw;
 }
 
 .hover-light:hover,
 .hover-light:focus {
-    text-shadow: 1px 1px 8px white;
+  text-shadow: 1px 1px 8px white;
 }
 
 .white {
-    color:white;
+  color: white;
 }
 
 .as-center {
-    align-self: center;
+  align-self: center;
 }
 
 .space-between {
-    justify-content: space-between;
-    width: 90%;
+  justify-content: space-between;
+  width: 90%;
 }
 
 .divisor {
-    background-color: #6d3513;
-    width: 50%;
-    height: 2px;
-    border-radius: 200000%;
-    margin: 2vh 0 4vh 0;
+  background-color: #6d3513;
+  width: 50%;
+  height: 2px;
+  border-radius: 200000%;
+  margin: 2vh 0 4vh 0;
 }
 
 .solid-border {
-    border: 2px solid #361500;
+  border: 2px solid #361500;
 }
 
 .dashed-border {
-    border: 1px dashed #361500
+  border: 1px dashed #361500;
 }
 
 .expand {
-    transition: scale 0.75s;
+  transition: scale 0.75s;
 }
 
 .expand:hover,
 .expand:focus {
-    scale: 1.075;
+  scale: 1.075;
 }
 
 .padding-bottom {
-    padding-bottom: 2vw;
+  padding-bottom: 2vw;
 }
 
 .no-margin {
-    margin: 0;
+  margin: 0;
 }
 
-/* Estilos del Header */
-
 header {
-    position: sticky;
-    top:0;
-
-    background-color: #361500;
-
-    display: grid;
-    grid-template-areas: "logo nav pfp";
-    grid-template-columns: 20% 60% 20%;
-
-    height: 12vh;
-
-    z-index: 10;
+  position: sticky;
+  top: 0;
+  background-color: #361500;
+  display: grid;
+  grid-template-areas: "logo nav pfp";
+  grid-template-columns: 20% 60% 20%;
+  height: 12vh;
+  z-index: 10;
 }
 
 header nav {
-    grid-area: nav;
-    justify-self: center;
+  grid-area: nav;
+  justify-self: center;
 }
 
 .logo {
-    height: 12vh;
-    grid-area: logo;
+  height: 12vh;
+  grid-area: logo;
 }
 
 header nav ul {
-    display: flex;
-    flex-flow: row wrap;
-    list-style: none;
-
-    margin: 0;
-    padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.pfp { 
-    grid-area: pfp;
-    text-align: center;
-    justify-self: flex-end;
-    margin-right: 3vw;
+.pfp {
+  grid-area: pfp;
+  text-align: center;
+  justify-self: flex-end;
+  margin-right: 3vw;
 }
 
 .fa-circle-user {
-    font-size: 3.5vw;
+  font-size: 3.5vw;
 }
 
-
-/* Estilos del Main */
-
 .bg-img {
-    background-image: url(../assets/images/shop-parallax.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center ;
-    height: 13vw;
-    margin-bottom: 3vw;
-    text-shadow: black 2px 2px;
-    box-shadow: black 2px 2px 10px;
+  background-image: url(../assets/images/shop-parallax.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 13vw;
+  margin-bottom: 3vw;
+  text-shadow: black 2px 2px;
+  box-shadow: black 2px 2px 10px;
 }
 
 main {
-    background: rgb(129,91,51);
-    background: linear-gradient(90deg, rgba(129,91,51,1) 0%, rgba(187,138,76,1) 35%, rgba(139,95,48,1) 92%);    
-    
-    color:#F4DFBA;
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.15vw;
-    text-align: center;
-    cursor: default;
-
-    min-height: 81vh;
+  background: rgb(129, 91, 51);
+  background: linear-gradient(90deg, rgb(129, 91, 51) 0%, rgb(187, 138, 76) 35%, rgb(139, 95, 48) 92%);
+  color: #F4DFBA;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.15vw;
+  text-align: center;
+  cursor: default;
+  min-height: 81vh;
 }
 
 main p {
-    margin: 1vw 10vw 1vh 10vw;
+  margin: 1vw 10vw 1vh 10vw;
 }
 
 h1 {
-    font-family: 'Dancing Script', cursive;
-    font-size: 10vw;
+  font-family: "Dancing Script", cursive;
+  font-size: 10vw;
 }
 
 .flex-column img {
-    height: 30vw;
+  height: 30vw;
 }
 
 .location h2 {
-    font-size: 36px;
-    margin-bottom: 1.5vw;
+  font-size: 36px;
+  margin-bottom: 1.5vw;
 }
 
 .location iframe {
-    width: 70%;
-    padding-bottom: 2vw;
+  width: 70%;
+  padding-bottom: 2vw;
 }
 
-
-/* Estilos del Footer */
-
 footer {
-    display: grid;
-    grid-template-areas: "contact cr sns";
-    grid-template-columns: 15% 70% 15%;
-
-    height: 7vh;
-    width: 100%;
-    background-color: #361500;
-
-    position: relative;
-    bottom:0;
+  display: grid;
+  grid-template-areas: "contact cr sns";
+  grid-template-columns: 15% 70% 15%;
+  height: 7vh;
+  width: 100%;
+  background-color: #361500;
+  position: relative;
+  bottom: 0;
 }
 
 footer a {
-    grid-area: contact;
+  grid-area: contact;
 }
 
 footer p {
-    grid-area: cr;
-    text-align: center;
-    font-family: 'Nunito', sans-serif;
-    font-size: 13px;
+  grid-area: cr;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 13px;
 }
 
 .footer-sns {
-    grid-area: sns;
-    justify-self: center;
-
-    /* d-flex para que se desactive el wrap */
-    display: flex;
+  grid-area: sns;
+  justify-self: center;
+  /* d-flex para que se desactive el wrap */
+  display: flex;
 }
 
 footer .fa-brands {
-    font-size: 3vw;
-    margin: 0 1vw 0 1vw;
+  font-size: 3vw;
+  margin: 0 1vw 0 1vw;
 }
 
-
-/* Estilos del About Us */
-
 .about-grid {
-    display: grid;
-    grid-template-areas:    
-    "pic txt"
-    "credit txt";
-
-    grid-template-rows: 57vh 2.75vw;
-    grid-template-columns: 45vh auto;
-
-    margin: 7.5vh 7.5vw 7.5vh 7.5vw;
-    border: 3px solid #361500;
+  display: grid;
+  grid-template-areas: "pic txt" "credit txt";
+  grid-template-rows: 57vh 2.75vw;
+  grid-template-columns: 45vh auto;
+  margin: 7.5vh 7.5vw 7.5vh 7.5vw;
+  border: 3px solid #361500;
 }
 
 .mumei-pic {
-    grid-area: pic;
-    width: 100%;
-    height: 100%;
-    border-right: 2px dashed #361500;
+  grid-area: pic;
+  width: 100%;
+  height: 100%;
+  border-right: 2px dashed #361500;
 }
 
 #credit {
-    grid-area: credit;
-    border-right: 2px dashed #361500;
-    text-align: end;
+  grid-area: credit;
+  border-right: 2px dashed #361500;
+  text-align: end;
 }
 
 .description {
-    grid-area: txt;
+  grid-area: txt;
 }
 
 .subtitle {
-    font-family: 'Dancing Script', cursive;
-    font-size: 9vw;
-    margin-bottom: 3vh;
+  font-family: "Dancing Script", cursive;
+  font-size: 9vw;
+  margin-bottom: 3vh;
 }
 
 .accordion {
-    padding-bottom: 3vh;
-    width: 75%;
+  padding-bottom: 3vh;
+  width: 75%;
 }
 
 .accordion-button,
 .accordion-button:enabled {
-    background-color: #361500;
-    color:#EEC373;
-    font-family: 'Nunito', sans-serif;
-    font-size: 24px;
+  background-color: #361500;
+  color: #EEC373;
+  font-family: "Nunito", sans-serif;
+  font-size: 24px;
 }
 
 .credit {
-    font-size: 14px;
+  font-size: 14px;
 }
 
-
-/* Estilos del Contacto */
-
 .contact-grid-parent {
-    display: grid;
-    
-    grid-template-areas: 
-    "sns login"
-    "form form";
-    grid-template-columns: 45% 45%;
-    grid-template-rows: 30vh 50vh;
-    gap: 5%;
-    margin: 4vh 0 0 5%;
-    padding-bottom: 5vh;
+  display: grid;
+  grid-template-areas: "sns login" "form form";
+  grid-template-columns: 45% 45%;
+  grid-template-rows: 30vh 50vh;
+  gap: 5%;
+  margin: 4vh 0 0 5%;
+  padding-bottom: 5vh;
 }
 
 .contact-grid-child {
-    display: grid;
-    
-    grid-template-areas: 
-    "subtitle"
-    "content";
-
-    grid-template-rows: 1fr 3fr;
-    border: 2px solid #361500;
+  display: grid;
+  grid-template-areas: "subtitle" "content";
+  grid-template-rows: 1fr 3fr;
+  border: 2px solid #361500;
 }
 
 .sns-container {
-    grid-area: sns;
+  grid-area: sns;
 }
 
 .sns-subtitle,
 .login-subtitle,
 .form-subtitle {
-    grid-area: subtitle;
-    
-    font-size: 1.25vw;
-    border-bottom: 2px dashed #361500;
+  grid-area: subtitle;
+  font-size: 1.25vw;
+  border-bottom: 2px dashed #361500;
 }
-
 
 .sns-content a {
-    font-size: 6vw;
-    margin: 0 2vw 0 2vw;
+  font-size: 6vw;
+  margin: 0 2vw 0 2vw;
 }
 
-.sns-content a:hover, 
+.sns-content a:hover,
 .sns-content a:focus {
-    text-shadow: #6d3513 2px 2px 10px;
-    scale: 1.1;
+  text-shadow: #6d3513 2px 2px 10px;
+  scale: 1.1;
 }
 
 .login-content p {
-    font-size: 3vw;
-    color:black;
+  font-size: 3vw;
+  color: black;
 }
 
 .login-content a {
-    font-size: 2.25vw;
-    text-decoration: none;
+  font-size: 2.25vw;
+  text-decoration: none;
 }
 
 .form-container {
-    grid-area: form;
+  grid-area: form;
 }
 
 .form-container div {
-    width: 100%;
+  width: 100%;
 }
 
 .form-organization {
-    width: 40%;
+  width: 40%;
 }
 
 .form-organization div {
-    margin: 1vh 4vw 1vh 0;
+  margin: 1vh 4vw 1vh 0;
 }
 
 form textarea {
-    width: 50vw;
-    height: 20vh;
+  width: 50vw;
+  height: 20vh;
 }
 
 .buttons {
-    margin-top: 3vh;
+  margin-top: 3vh;
 }
 
 .buttons input {
-    padding: 2.5px 10px 2.5px 10px;
-    margin:0 2vw 0 2vw;
+  padding: 2.5px 10px 2.5px 10px;
+  margin: 0 2vw 0 2vw;
 }
 
-
-/* Estilos del Login */
-
 .body-template {
-    margin-top: 4vh;
+  margin-top: 4vh;
 }
 
 .body-template form {
-    padding: 10px;
-    font-size: 20px;
-    width: 50%;
-    border: 1px dashed #361500;
+  padding: 10px;
+  font-size: 20px;
+  width: 50%;
+  border: 1px dashed #361500;
 }
 
-.body-template p{
-    margin-top: 7vh;
-    font-size: 32px;
+.body-template p {
+  margin-top: 7vh;
+  font-size: 32px;
 }
 
 .body-template a:visited {
-    color:#0066cc;
+  color: #0066cc;
 }
 
-
-/* Estilos del Register */
-
 #register fieldset {
-    border: 1px dashed #361500;
-    padding: 1vw 0 1vw 0;
+  border: 1px dashed #361500;
+  padding: 1vw 0 1vw 0;
 }
 
 #register form {
-    border: none;
+  border: none;
 }
 
 .body-template legend {
-    margin-left: 4vw;
-    font-size: 28px;
+  margin-left: 4vw;
+  font-size: 28px;
 }
-
-
-/* Estilos de los Servicios */
-
-.services-grid {
-    display: grid;
-    width: 85%;
-
-    grid-template-areas: 
-    "autoservice coffee     coffee coffee"
-    "autoservice custom     custom img1"
-    "img2        custom     custom img3"
-    "delivery    delivery   points points";
-
-    grid-template-columns: 2fr 1fr 1fr 2fr;
-    grid-template-rows: 14vw 14vw 14vw 14vw;
-    gap: 5px;
-
-    margin: 3vw 0 1vw 0;
-    padding: 10px;
-}
-
-
-.services-grid h3 {
-    font-size: 24px;
-    margin-bottom: 1vw;
-}
-
-.services-grid p {
-    width: 90%;
-}
-
-.autoservice {
-    grid-area: autoservice;
-}
-
-.coffee {
-    grid-area: coffee;
-}
-
-.delivery {
-    grid-area: delivery;
-}
-
-.points {
-    grid-area: points;
-}
-
-.custom {
-    grid-area: custom;
-}
-
-#img1 {
-    grid-area: img1;
-}
-
-#img2 {
-    grid-area: img2;
-}
-
-#img3 {
-    grid-area: img3;
-}
-
-.services-grid img {
-    width: 100%;
-    height: 100%;
-}
-
-
-/* Estilos del Menu */
 
 article {
-    height: 20vw;
-    width: 20vw;
-    margin: 1vw;
-    padding: 1.25vw;
-
-    background-color: white;
-    border: 3px solid #6e4227;
-    border-radius: 5px;
-
-    font-size: 1.25vw;
-    font-weight: 700;
-
-    transition: scale 0.15s;
+  height: 20vw;
+  width: 20vw;
+  margin: 1vw;
+  padding: 1.25vw;
+  background-color: white;
+  border: 3px solid #6e4227;
+  border-radius: 5px;
+  font-size: 1.25vw;
+  font-weight: 700;
+  transition: scale 0.15s;
 }
 
 article p {
-    color:black;
-    margin:0 1vw 0 1vw;
+  color: black;
+  margin: 0 1vw 0 1vw;
 }
 
 article img {
-    width: 80%;
-    border-radius: 5px;
+  width: 80%;
+  border-radius: 5px;
 }
 
 article:hover,
 article:focus {
-    scale: 1.15;
-    cursor: pointer;
-    border: 3px double #6e4227;
+  scale: 1.15;
+  cursor: pointer;
+  border: 3px double #6e4227;
 }
 
-
-/* Estilos del Point Shop */
-
 .points-grid {
-    width: 90%;
-    display: grid;
-
-    grid-template-areas: 
-    "faq destacados"
-    "todos todos";
-    grid-template-columns: 2fr 6fr;
-
-
-    gap: 5px;
-    
-    padding: 5px;
-    margin-bottom: 2vw;
+  width: 90%;
+  display: grid;
+  grid-template-areas: "faq destacados" "todos todos";
+  grid-template-columns: 2fr 6fr;
+  gap: 5px;
+  padding: 5px;
+  margin-bottom: 2vw;
 }
 
 .points-grid h2 {
-    font-size: 1.5vw;
-    border-bottom: 1px dashed #361500;
+  font-size: 1.5vw;
+  border-bottom: 1px dashed #361500;
 }
 
 .faq {
-    grid-area: faq;
+  grid-area: faq;
 }
 
 .destacados {
-    grid-area: destacados;
+  grid-area: destacados;
 }
 
 .todos {
-    grid-area: todos;
+  grid-area: todos;
 }
 
 #pos-center {
-    position: relative;
-    top: 30%;
+  position: relative;
+  top: 30%;
 }
 
 .faq .btn {
-    position: relative;
-    top: 35%;
+  position: relative;
+  top: 35%;
 }
 
 .btn {
-    padding: 1vw 2vw 1vw 2vw;
-    font-size: 1.5vw;
-    background-color: #58331c;
-    color:#EEC373;
-    margin-bottom: 1vw;
+  padding: 1vw 2vw 1vw 2vw;
+  font-size: 1.5vw;
+  background-color: #58331c;
+  color: #EEC373;
+  margin-bottom: 1vw;
 }
 
 .btn:hover {
-    background-color: #361500;
-    color:#EEC373;
+  background-color: #361500;
+  color: #EEC373;
 }
 
 .btn-secondary {
-    background-color: #361500;
+  background-color: #361500;
 }
 
 .btn-secondary:hover {
-    background-color: #58331c;
+  background-color: #58331c;
 }
 
 .modal-header {
-    border-bottom: 1px solid #EEC373
+  border-bottom: 1px solid #EEC373;
 }
 
 .modal-content {
-    background: rgb(129,91,51);
-    background: linear-gradient(90deg, rgba(129,91,51,1) 0%, rgba(187,138,76,1) 35%, rgba(139,95,48,1) 92%);    
+  background: rgb(129, 91, 51);
+  background: linear-gradient(90deg, rgb(129, 91, 51) 0%, rgb(187, 138, 76) 35%, rgb(139, 95, 48) 92%);
 }
 
 .modal-content li {
-    font-size: 2vw;
-    font-weight: 700;
+  font-size: 2vw;
+  font-weight: 700;
 }
 
 .modal-content p {
-    font-size: 1.25vw;
-    margin-bottom: 3vw;
+  font-size: 1.25vw;
+  margin-bottom: 3vw;
 }
 
 .modal-footer {
-    border-top: 1px solid #EEC373;
+  border-top: 1px solid #EEC373;
 }
 
 .modal-footer .btn {
-    border: 1px solid #EEC373
+  border: 1px solid #EEC373;
 }
 
 .points-grid img {
-    height: 14vw;
+  height: 14vw;
 }
 
+.services-grid {
+  display: grid;
+  width: 85%;
+  grid-template-areas: "autoservice coffee     coffee coffee" "autoservice custom     custom img1" "img2        custom     custom img3" "delivery    delivery   points points";
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  grid-template-rows: 14vw 14vw 14vw 14vw;
+  gap: 5px;
+  margin: 3vw 0 1vw 0;
+  padding: 10px;
+}
 
-/* Media Queries */
+.services-grid h3 {
+  font-size: 24px;
+  margin-bottom: 1vw;
+}
+
+.services-grid p {
+  width: 90%;
+}
+
+.autoservice {
+  grid-area: autoservice;
+}
+
+.coffee {
+  grid-area: coffee;
+}
+
+.delivery {
+  grid-area: delivery;
+}
+
+.points {
+  grid-area: points;
+}
+
+.custom {
+  grid-area: custom;
+}
+
+#img1 {
+  grid-area: img1;
+}
+
+#img2 {
+  grid-area: img2;
+}
+
+#img3 {
+  grid-area: img3;
+}
+
+.services-grid img {
+  width: 100%;
+  height: 100%;
+}
 
 @media screen and (max-width: 768px) {
-    
-    /* Header */
-    .fa-circle-user {
-        font-size: 40px;
-    }
-    
-    nav {
-        width: 100%;
-        font-size: 17px;
-        margin-left: 10vw;
-    }
-
-    .bg-img {
-        height: 18vw;
-        margin-bottom: 5vw;
-    }
-
-    h1 {
-        font-size: 13vw;
-    }
-
-
-    /* Main */
-    main {
-        font-size: 14px;
-    }
-    
-    .flex-column img {
-        height: 40vw;
-        min-height: 260px;
-    }
-
-
-    /* Footer */
-    footer {
-        grid-template-columns: 20% 45% 35%;
-    }
-
-    footer .fa-brands {
-        font-size: 28px;
-        margin: 0 1vw 0 1vw;
-    }   
-
-
-    /* Login/Register */
-    .body-template p {
-        font-size: 3vw;
-    }
-
-    #register form {
-        width: 90%;
-        font-size: 14px;
-    }
-
-
-    /* Menu */
-    .menu img {
-        height: 30vw;
-        min-height: 0;
-    }
-
-    .menu article p {
-        font-size: 2vw;
-    }
-
-
-    /* Point Shop */
-    .points-grid article {
-        height: fit-content;
-    }
-
-    .points-grid img {
-        height: 14vw;
-        min-height: 0;
-    }
-
-    .points-grid article p {
-        font-size: 1.5vw;
-    }
-
-    .modal-content li {
-        font-size: 3.5vw;
-    }
-
-    .modal-content p {
-        font-size: 2vw;
-        margin-bottom: 5vw;
-    }
-
-    .modal-footer .btn {
-        font-size: 1.75vw;
-    }
-
-
-    /* About Us */
-    .subtitle {
-        font-size: 10vw;
-    }
-
-    #credit,
-    .description {
-        font-size: 1.5vw;
-    }
-
-    .about-grid {
-        width: 90%;
-        margin-left: 5vw;
-    }
-
-    .accordion img {
-        width: 95% ;
-    }
-
-    #mumei-cafe {
-        width: auto;
-    }
-
-
-    /* Contacto */
-    .sns-subtitle,
-    .login-subtitle,
-    .form-subtitle {
-        font-size: 2vw;
-    }
-
-    .sns-content a {
-        font-size: 7.5vw;
-    }
-
-    .login-content p {
-        font-size: 4vw;
-    }
-
-    .login-content a {
-        font-size: 3vw;
-    }
-
-    .form-container {
-        font-size: 2.5vw;
-    }
-
-
-    /* Servicios */
-    .services-grid {
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-    }
-
-    .services-grid h3 {
-        font-size: 3vw;
-    }
-
-    .services-grid p {
-        font-size: 1.75vw;
-    }
-
-    .services-grid img {
-        min-height: 0;
-        height: 20vw;
-        width: 20vw;
-    }
+  /* Header */
+  .fa-circle-user {
+    font-size: 40px;
+  }
+  nav {
+    width: 100%;
+    font-size: 17px;
+    margin-left: 10vw;
+  }
+  .bg-img {
+    height: 18vw;
+    margin-bottom: 5vw;
+  }
+  h1 {
+    font-size: 13vw;
+  }
+  /* Main */
+  main {
+    font-size: 14px;
+  }
+  .flex-column img {
+    height: 40vw;
+    min-height: 260px;
+  }
+  /* Footer */
+  footer {
+    grid-template-columns: 20% 45% 35%;
+  }
+  footer .fa-brands {
+    font-size: 28px;
+    margin: 0 1vw 0 1vw;
+  }
+  /* Login/Register */
+  .body-template p {
+    font-size: 3vw;
+  }
+  #register form {
+    width: 90%;
+    font-size: 14px;
+  }
+  /* Menu */
+  .menu img {
+    height: 30vw;
+    min-height: 0;
+  }
+  .menu article p {
+    font-size: 2vw;
+  }
+  /* Point Shop */
+  .points-grid article {
+    height: fit-content;
+  }
+  .points-grid img {
+    height: 14vw;
+    min-height: 0;
+  }
+  .points-grid article p {
+    font-size: 1.5vw;
+  }
+  .modal-content li {
+    font-size: 3.5vw;
+  }
+  .modal-content p {
+    font-size: 2vw;
+    margin-bottom: 5vw;
+  }
+  .modal-footer .btn {
+    font-size: 1.75vw;
+  }
+  /* About Us */
+  .subtitle {
+    font-size: 10vw;
+  }
+  #credit,
+.description {
+    font-size: 1.5vw;
+  }
+  .about-grid {
+    width: 90%;
+    margin-left: 5vw;
+  }
+  .accordion img {
+    width: 95%;
+  }
+  #mumei-cafe {
+    width: auto;
+  }
+  /* Contacto */
+  .sns-subtitle,
+.login-subtitle,
+.form-subtitle {
+    font-size: 2vw;
+  }
+  .sns-content a {
+    font-size: 7.5vw;
+  }
+  .login-content p {
+    font-size: 4vw;
+  }
+  .login-content a {
+    font-size: 3vw;
+  }
+  .form-container {
+    font-size: 2.5vw;
+  }
+  /* Servicios */
+  .services-grid {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+  .services-grid h3 {
+    font-size: 3vw;
+  }
+  .services-grid p {
+    font-size: 1.75vw;
+  }
+  .services-grid img {
+    min-height: 0;
+    height: 20vw;
+    width: 20vw;
+  }
 }
-
 @media screen and (max-width: 580px) {
-
-    /* Header */
-    header {
-        height: 10vh;
-    }
-    
-    .logo {
-        height: 10vh;
-    }
-
-    nav {
-        font-size: 14px;
-    }
-
-    .fa-circle-user {
-        font-size: 35px;
-        margin-bottom: 1vw;
-    }
-
-
-    /* Main */
-    main {
-        min-height: 83vh;
-    }
-    
-    .bg-img {
-        height: 24vw;
-    }
-
-    h1 {
-        font-size: 18vw;
-    }
-
-
-    /* Footer */
-    footer {
-        grid-template-columns: 25% 40% 35%;
-    }
-
-    footer .fa-brands {
-        margin: 0 0 0 16px;
-    }
-
-
-    /* Login/Register */
-    #register form .flex-row {
-        flex-direction: column;
-        margin: 5px;
-    }
-
-    .body-template input {
-        width: 75%;
-    }
-
-
-    /* Menu */
-    .menu article {
-        min-width: 30vw;
-        min-height: 30vw;
-    }
-
-    .menu article p {
-        font-size: 3vw;
-    }
-
-
-    /* Point Shop */
-    .points-grid {
-        grid-template-areas:
-        "nada faq nada2"
-        "destacados destacados destacados"
-        "todos todos todos" ;
-
-        grid-template-columns: 25% 50% 25%;
-        grid-template-rows: 20vh auto auto;
-
-        gap: 10px;
-    }
-
-    .points-grid h2 {
-        font-size: 4vw;
-    }
-
-    .faq {
-        padding-bottom: 10vw;
-    }
-
-    #pos-center {
-        position: relative;
-        top: 10%;
-    }
-
-    .faq .btn {
-        position: relative;
-        top: 15%;
-
-        padding: 1.5vw 3vw 1.5vw 3vw;
-        font-size: 2vw;
-    }
-
-    .destacados .flex-row,
-    .todos .flex-row {
-        justify-content: center;
-    }
-
-    .destacados .flex-row:not(.space-between),
-    .todos .flex-row:not(.space-between){
-        flex-wrap: wrap;
-    }
-
-    .destacados article,
-    .todos article {
-        width: 40vw;
-        height: 30vw;
-    }
-
-    .destacados article img,
-    .todos article img {
-        width: 80%;
-        height: 90%;
-    }
-
-    .destacados article p,
-    .todos article p {
-        font-size: 2.5vw;
-    }
-
-
-    /* About Us */
-    .about-grid {
-        grid-template-rows: 42.75vh 4vw;
-        grid-template-columns: 33.75vh auto;
-    }
-
-    .subtitle {
-        font-size: 10vw;
-    }
-
-    #credit,
-    .description {
-        font-size: 1.75vw;
-    }
-
-    .accordion {
-        width: 90%;
-    }
-
-
-    /* Servicios */
-    .services-grid {
-        grid-template-areas: 
-        "autoservice autoservice coffee coffee"
-        "img1        img1        img3   img3"
-        "custom      custom      custom custom"
-        "img2       img2        img2   img2"
-        "delivery  delivery      points points";
-        
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-    }
-
-    .services-grid h3 {
-        font-size: 4vw;
-    }
-
-    .services-grid p {
-        font-size: 2vw;
-        padding-bottom: 2vw;
-    }
-
-    .services-grid img {
-        width: 100%;
-        height: 30vw;
-    }
-
-    #img2 img {
-        height: 60vw;
-    }
+  /* Header */
+  header {
+    height: 10vh;
+  }
+  .logo {
+    height: 10vh;
+  }
+  nav {
+    font-size: 14px;
+  }
+  .fa-circle-user {
+    font-size: 35px;
+    margin-bottom: 1vw;
+  }
+  /* Main */
+  main {
+    min-height: 83vh;
+  }
+  .bg-img {
+    height: 24vw;
+  }
+  h1 {
+    font-size: 18vw;
+  }
+  /* Footer */
+  footer {
+    grid-template-columns: 25% 40% 35%;
+  }
+  footer .fa-brands {
+    margin: 0 0 0 16px;
+  }
+  /* Login/Register */
+  #register form .flex-row {
+    flex-direction: column;
+    margin: 5px;
+  }
+  .body-template input {
+    width: 75%;
+  }
+  /* Menu */
+  .menu article {
+    min-width: 30vw;
+    min-height: 30vw;
+  }
+  .menu article p {
+    font-size: 3vw;
+  }
+  /* Point Shop */
+  .points-grid {
+    grid-template-areas: "nada faq nada2" "destacados destacados destacados" "todos todos todos";
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 20vh auto auto;
+    gap: 10px;
+  }
+  .points-grid h2 {
+    font-size: 4vw;
+  }
+  .faq {
+    padding-bottom: 10vw;
+  }
+  #pos-center {
+    position: relative;
+    top: 10%;
+  }
+  .faq .btn {
+    position: relative;
+    top: 15%;
+    padding: 1.5vw 3vw 1.5vw 3vw;
+    font-size: 2vw;
+  }
+  .destacados .flex-row,
+.todos .flex-row {
+    justify-content: center;
+  }
+  .destacados .flex-row:not(.space-between),
+.todos .flex-row:not(.space-between) {
+    flex-wrap: wrap;
+  }
+  .destacados article,
+.todos article {
+    width: 40vw;
+    height: 30vw;
+  }
+  .destacados article img,
+.todos article img {
+    width: 80%;
+    height: 90%;
+  }
+  .destacados article p,
+.todos article p {
+    font-size: 2.5vw;
+  }
+  /* About Us */
+  .about-grid {
+    grid-template-rows: 42.75vh 4vw;
+    grid-template-columns: 33.75vh auto;
+  }
+  .subtitle {
+    font-size: 10vw;
+  }
+  #credit,
+.description {
+    font-size: 1.75vw;
+  }
+  .accordion {
+    width: 90%;
+  }
+  /* Servicios */
+  .services-grid {
+    grid-template-areas: "autoservice autoservice coffee coffee" "img1        img1        img3   img3" "custom      custom      custom custom" "img2       img2        img2   img2" "delivery  delivery      points points";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+  .services-grid h3 {
+    font-size: 4vw;
+  }
+  .services-grid p {
+    font-size: 2vw;
+    padding-bottom: 2vw;
+  }
+  .services-grid img {
+    width: 100%;
+    height: 30vw;
+  }
+  #img2 img {
+    height: 60vw;
+  }
 }
-
 @media screen and (max-width: 470px) {
-
-    /* Header */
-    header {
-        grid-template-areas: 
-        "logo nada pfp"
-        "nav  nav  nav";
-
-        grid-template-columns: 30% 55% 15%;
-
-        height: 20vh;
-    }
-
-    .logo {
-        height: 13vh;
-    }
-
-    header nav {
-        justify-content: center;
-        align-items: flex-end;
-        margin: 0;
-    }   
-
-    header nav ul {
-        height: 7vh;
-        flex-wrap: nowrap;
-    }
-
-    li,
-    li a {
-        padding: 1.5vw;
-    }
-
-    .pfp {
-        margin-right: 5vw;
-    }
-
-
-    /* Main */
-    .bg-img {
-        min-height: 105px;
-    }
-
-    h1 {
-        font-size: 80px;
-    }
-
-    main {
-        font-size: 12px;
-    }
-
-    .flex-column img {
-        height: 30vw;
-        min-height: 180px;
-    }
-
-    .location h2 {
-        font-size: 28px;
-    }
-
-    .location iframe {
-        height: 30vh;
-    }
-
-
-    /* Login/Register */
-    .body-template p {
-        font-size: 4vw;
-    }
-
-
-    /* Menu */
-    .menu img {
-        height: 30vw;
-        min-height: 0;
-    }
-
-
-    /* Point Shop */
-    .destacados .flex-row,
-    .todos .flex-row {
-        justify-content: center;
-    }
-
-    .destacados article,
-    .todos article {
-        width: 40vw;
-        height: 35vw;
-    }
-
-    .destacados article img,
-    .todos article img {
-        min-height: 0;
-
-        width: 80%;
-        height: 90%;
-    }
-
-    .destacados article p,
-    .todos article p {
-        font-size: 2.5vw;
-    }
-
-    .modal-content li {
-        font-size: 5vw;
-    }
-
-    .modal-content p {
-        font-size: 3.5vw;
-    }
-
-    .modal-footer .btn {
-        font-size: 2.5vw;
-    }
-
-
-    /* About Us */
-    .about-grid {
-        grid-template-areas: 
-        "pic"
-        "credit"
-        "txt";
-
-        grid-template-columns: 100%;
-        grid-template-rows: auto;
-    }
-
-    .mumei-pic {
-        height: 50vh;
-        width: auto;
-
-        justify-self: center;
-        border: none;
-    }
-
-    #credit {
-        text-align: center;
-        border: none;
-        font-size: 3vw;
-        margin-bottom: 5vw;
-    }
-
-    .subtitle {
-        font-size: 15vw;
-    }
-
-    .description {
-        font-size: 2.5vw;
-    }
-
-
-    /* Contacto */
-    .contact-grid-parent {
-        grid-template-areas: 
-        "sns"
-        "login"
-        "form";
-
-        grid-template-columns: 90%;
-        grid-template-rows: auto;
-
-        margin-left: 10%;
-        padding-bottom: 16vh;
-    }
-
-    .sns-subtitle,
-    .login-subtitle,
-    .form-subtitle {
-        font-size: 3.5vw;
-    }
-
-    .sns-content a {
-        font-size: 15vw;
-        margin: 5vw;
-    }
-
-    .login-content p {
-        font-size: 10vw;
-    }
-
-    .login-content a {
-        font-size: 8vw;
-    }
-
-    .form-container .flex-row {
-        flex-direction: column;
-    }
-
-    .form-container {
-        padding-bottom: 2vh;
-    }
-
-    .form-content {
-        margin-top: 3vw;
-    }
-
-    form textarea {
-        margin-top: 5vw;
-    }
-
-
-    /* Servicios */
-    .services-grid img {
-        min-height: 0;
-    }
+  /* Header */
+  header {
+    grid-template-areas: "logo nada pfp" "nav  nav  nav";
+    grid-template-columns: 30% 55% 15%;
+    height: 20vh;
+  }
+  .logo {
+    height: 13vh;
+  }
+  header nav {
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0;
+  }
+  header nav ul {
+    height: 7vh;
+    flex-wrap: nowrap;
+  }
+  li,
+li a {
+    padding: 1.5vw;
+  }
+  .pfp {
+    margin-right: 5vw;
+  }
+  /* Main */
+  .bg-img {
+    min-height: 105px;
+  }
+  h1 {
+    font-size: 80px;
+  }
+  main {
+    font-size: 12px;
+  }
+  .flex-column img {
+    height: 30vw;
+    min-height: 180px;
+  }
+  .location h2 {
+    font-size: 28px;
+  }
+  .location iframe {
+    height: 30vh;
+  }
+  /* Login/Register */
+  .body-template p {
+    font-size: 4vw;
+  }
+  /* Menu */
+  .menu img {
+    height: 30vw;
+    min-height: 0;
+  }
+  /* Point Shop */
+  .destacados .flex-row,
+.todos .flex-row {
+    justify-content: center;
+  }
+  .destacados article,
+.todos article {
+    width: 40vw;
+    height: 35vw;
+  }
+  .destacados article img,
+.todos article img {
+    min-height: 0;
+    width: 80%;
+    height: 90%;
+  }
+  .destacados article p,
+.todos article p {
+    font-size: 2.5vw;
+  }
+  .modal-content li {
+    font-size: 5vw;
+  }
+  .modal-content p {
+    font-size: 3.5vw;
+  }
+  .modal-footer .btn {
+    font-size: 2.5vw;
+  }
+  /* About Us */
+  .about-grid {
+    grid-template-areas: "pic" "credit" "txt";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+  .mumei-pic {
+    height: 50vh;
+    width: auto;
+    justify-self: center;
+    border: none;
+  }
+  #credit {
+    text-align: center;
+    border: none;
+    font-size: 3vw;
+    margin-bottom: 5vw;
+  }
+  .subtitle {
+    font-size: 15vw;
+  }
+  .description {
+    font-size: 2.5vw;
+  }
+  /* Contacto */
+  .contact-grid-parent {
+    grid-template-areas: "sns" "login" "form";
+    grid-template-columns: 90%;
+    grid-template-rows: auto;
+    margin-left: 10%;
+    padding-bottom: 16vh;
+  }
+  .sns-subtitle,
+.login-subtitle,
+.form-subtitle {
+    font-size: 3.5vw;
+  }
+  .sns-content a {
+    font-size: 15vw;
+    margin: 5vw;
+  }
+  .login-content p {
+    font-size: 10vw;
+  }
+  .login-content a {
+    font-size: 8vw;
+  }
+  .form-container .flex-row {
+    flex-direction: column;
+  }
+  .form-container {
+    padding-bottom: 2vh;
+  }
+  .form-content {
+    margin-top: 3vw;
+  }
+  form textarea {
+    margin-top: 5vw;
+  }
+  /* Servicios */
+  .services-grid img {
+    min-height: 0;
+  }
 }
-
 @media screen and (max-width: 390px) {
-    /* Footer */
-    footer {
-        grid-template-columns: 25% 35% 40%;
-    }
-
-    footer a {
-        font-size: 11px;
-    }
-
-    footer p {
-        font-size: 10px;
-    }
-
-
-    /* Point Shop */
-    .points-grid {
-        grid-template-columns: 20% 55% 20%;
-    }
-
-    .points-grid article {
-        min-width: 60vw;
-        min-height: 50vw;
-    }
-
-    .points-grid article p {
-        font-size: 10px;
-    }
-
-
-    /* About us */
-    .accordion {
-        width: 100%;
-    }
-
-    /* Servicios */
-    .services-grid {
-        grid-template-areas: 
-        "autoservice autoservice"
-        "coffee coffee"
-        "img1 img3"
-        "custom custom"
-        "img2 img2"
-        "delivery delivery"
-        "points points";
-
-        gap:10px
-    }
-
-    .services-grid h3 {
-        font-size: 6vw;
-    }
-
-    .services-grid p {
-        font-size: 3vw;
-    }
+  /* Footer */
+  footer {
+    grid-template-columns: 25% 35% 40%;
+  }
+  footer a {
+    font-size: 11px;
+  }
+  footer p {
+    font-size: 10px;
+  }
+  /* Point Shop */
+  .points-grid {
+    grid-template-columns: 20% 55% 20%;
+  }
+  .points-grid article {
+    min-width: 60vw;
+    min-height: 50vw;
+  }
+  .points-grid article p {
+    font-size: 10px;
+  }
+  /* About us */
+  .accordion {
+    width: 100%;
+  }
+  /* Servicios */
+  .services-grid {
+    grid-template-areas: "autoservice autoservice" "coffee coffee" "img1 img3" "custom custom" "img2 img2" "delivery delivery" "points points";
+    gap: 10px;
+  }
+  .services-grid h3 {
+    font-size: 6vw;
+  }
+  .services-grid p {
+    font-size: 3vw;
+  }
 }
-
 @media screen and (max-width: 355px) {
-
-    /* Header */
-    nav ul li a{
-        font-size: 10px;
-    }
-
-    .fa-circle-user {
-        margin-right: 14px;
-        font-size: 28px;
-    }
-
-
-    /* Main */
-    h1 {
-        font-size: 20vw;
-        min-height: 40px;
-    }
-
-    .flex-column img {
-        min-height: 120px;
-    }
-
-    main {
-        font-size: 11px;
-    }
-
-    
-    /* Footer */
-    footer .fa-brands {
-        margin: 0 4px 0 4px;
-    }
-
-
-    /* Login/Register */
-    .body-template p {
-        font-size: 16px;
-    }
-
-    .body-template div input {
-        width: 75%;
-    }
-
-    #register input {
-        width: 50%;
-    }
-    
-
-    /* Menu */
-    .menu article {
-       min-width: 45vw;
-       min-height: 40vw; 
-    }
-
-    .menu article p {
-        font-size: 4vw;
-    }
-
-    .menu img {
-        height: 30vw;
-        min-height: 0;
-    }
-
-
-    /* Point Shop */
-    .faq .btn {
-        min-width: 50px;
-        min-height: 30px;
-
-        font-size: 14px;
-    }
-
-
-    /* About Us */
-    .description {
-        font-size: 3.25vw;
-    }
-
-
-    /* Contacto */
-    .form-content {
-        font-size: 12px;
-    }
+  /* Header */
+  nav ul li a {
+    font-size: 10px;
+  }
+  .fa-circle-user {
+    margin-right: 14px;
+    font-size: 28px;
+  }
+  /* Main */
+  h1 {
+    font-size: 20vw;
+    min-height: 40px;
+  }
+  .flex-column img {
+    min-height: 120px;
+  }
+  main {
+    font-size: 11px;
+  }
+  /* Footer */
+  footer .fa-brands {
+    margin: 0 4px 0 4px;
+  }
+  /* Login/Register */
+  .body-template p {
+    font-size: 16px;
+  }
+  .body-template div input {
+    width: 75%;
+  }
+  #register input {
+    width: 50%;
+  }
+  /* Menu */
+  .menu article {
+    min-width: 45vw;
+    min-height: 40vw;
+  }
+  .menu article p {
+    font-size: 4vw;
+  }
+  .menu img {
+    height: 30vw;
+    min-height: 0;
+  }
+  /* Point Shop */
+  .faq .btn {
+    min-width: 50px;
+    min-height: 30px;
+    font-size: 14px;
+  }
+  /* About Us */
+  .description {
+    font-size: 3.25vw;
+  }
+  /* Contacto */
+  .form-content {
+    font-size: 12px;
+  }
 }

@@ -1,0 +1,36 @@
+footer {
+    display: grid;
+    grid-template-areas: "contact cr sns";
+    grid-template-columns: 15% 70% 15%;
+
+    height: 7vh;
+    width: 100%;
+    background-color: #361500;
+
+    position: relative;
+    bottom:0;
+}
+
+footer a {
+    grid-area: contact;
+}
+
+footer p {
+    grid-area: cr;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+}
+
+.footer-sns {
+    grid-area: sns;
+    justify-self: center;
+
+    /* d-flex para que se desactive el wrap */
+    display: flex;
+}
+
+footer .fa-brands {
+    font-size: 3vw;
+    margin: 0 1vw 0 1vw;
+}

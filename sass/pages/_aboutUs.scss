@@ -1,0 +1,52 @@
+.about-grid {
+    display: grid;
+    grid-template-areas:    
+    "pic txt"
+    "credit txt";
+
+    grid-template-rows: 57vh 2.75vw;
+    grid-template-columns: 45vh auto;
+
+    margin: 7.5vh 7.5vw 7.5vh 7.5vw;
+    border: 3px solid #361500;
+}
+
+.mumei-pic {
+    grid-area: pic;
+    width: 100%;
+    height: 100%;
+    border-right: 2px dashed #361500;
+}
+
+#credit {
+    grid-area: credit;
+    border-right: 2px dashed #361500;
+    text-align: end;
+}
+
+.description {
+    grid-area: txt;
+}
+
+.subtitle {
+    font-family: 'Dancing Script', cursive;
+    font-size: 9vw;
+    margin-bottom: 3vh;
+}
+
+.accordion {
+    padding-bottom: 3vh;
+    width: 75%;
+}
+
+.accordion-button,
+.accordion-button:enabled {
+    background-color: #361500;
+    color:#EEC373;
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+}
+
+.credit {
+    font-size: 14px;
+}
