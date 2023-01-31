@@ -9,17 +9,22 @@ footer {
 
     position: relative;
     bottom:0;
-}
+    
+    a {
+        grid-area: contact;
+    }
 
-footer a {
-    grid-area: contact;
-}
-
-footer p {
-    grid-area: cr;
-    text-align: center;
-    font-family: 'Nunito', sans-serif;
-    font-size: 13px;
+    p {
+        grid-area: cr;
+        text-align: center;
+        font-family: 'Nunito', sans-serif;
+        font-size: 13px;
+    }
+    
+    .fa-brands {
+        font-size: 3vw;
+        margin: 0 1vw 0 1vw;
+    } 
 }
 
 .footer-sns {
@@ -28,9 +33,4 @@ footer p {
 
     /* d-flex para que se desactive el wrap */
     display: flex;
-}
-
-footer .fa-brands {
-    font-size: 3vw;
-    margin: 0 1vw 0 1vw;
 }

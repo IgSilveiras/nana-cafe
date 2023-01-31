@@ -115,23 +115,21 @@ header {
   height: 12vh;
   z-index: 10;
 }
-
 header nav {
   grid-area: nav;
   justify-self: center;
 }
-
-.logo {
-  height: 12vh;
-  grid-area: logo;
-}
-
 header nav ul {
   display: flex;
   flex-flow: row wrap;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.logo {
+  height: 12vh;
+  grid-area: logo;
 }
 
 .pfp {
@@ -166,7 +164,6 @@ main {
   cursor: default;
   min-height: 81vh;
 }
-
 main p {
   margin: 1vw 10vw 1vh 10vw;
 }
@@ -200,16 +197,18 @@ footer {
   position: relative;
   bottom: 0;
 }
-
 footer a {
   grid-area: contact;
 }
-
 footer p {
   grid-area: cr;
   text-align: center;
   font-family: "Nunito", sans-serif;
   font-size: 13px;
+}
+footer .fa-brands {
+  font-size: 3vw;
+  margin: 0 1vw 0 1vw;
 }
 
 .footer-sns {
@@ -217,11 +216,6 @@ footer p {
   justify-self: center;
   /* d-flex para que se desactive el wrap */
   display: flex;
-}
-
-footer .fa-brands {
-  font-size: 3vw;
-  margin: 0 1vw 0 1vw;
 }
 
 .about-grid {
@@ -293,6 +287,14 @@ footer .fa-brands {
 .sns-container {
   grid-area: sns;
 }
+.sns-container a {
+  font-size: 6vw;
+  margin: 0 2vw 0 2vw;
+}
+.sns-container a:hover, .sns-container a:focus {
+  text-shadow: #6d3513 2px 2px 10px;
+  scale: 1.1;
+}
 
 .sns-subtitle,
 .login-subtitle,
@@ -302,22 +304,10 @@ footer .fa-brands {
   border-bottom: 2px dashed #361500;
 }
 
-.sns-content a {
-  font-size: 6vw;
-  margin: 0 2vw 0 2vw;
-}
-
-.sns-content a:hover,
-.sns-content a:focus {
-  text-shadow: #6d3513 2px 2px 10px;
-  scale: 1.1;
-}
-
 .login-content p {
   font-size: 3vw;
   color: black;
 }
-
 .login-content a {
   font-size: 2.25vw;
   text-decoration: none;
@@ -326,7 +316,6 @@ footer .fa-brands {
 .form-container {
   grid-area: form;
 }
-
 .form-container div {
   width: 100%;
 }
@@ -334,7 +323,6 @@ footer .fa-brands {
 .form-organization {
   width: 40%;
 }
-
 .form-organization div {
   margin: 1vh 4vw 1vh 0;
 }
@@ -347,7 +335,6 @@ form textarea {
 .buttons {
   margin-top: 3vh;
 }
-
 .buttons input {
   padding: 2.5px 10px 2.5px 10px;
   margin: 0 2vw 0 2vw;
@@ -356,19 +343,16 @@ form textarea {
 .body-template {
   margin-top: 4vh;
 }
-
 .body-template form {
   padding: 10px;
   font-size: 20px;
   width: 50%;
   border: 1px dashed #361500;
 }
-
 .body-template p {
   margin-top: 7vh;
   font-size: 32px;
 }
-
 .body-template a:visited {
   color: #0066cc;
 }
@@ -377,7 +361,6 @@ form textarea {
   border: 1px dashed #361500;
   padding: 1vw 0 1vw 0;
 }
-
 #register form {
   border: none;
 }
@@ -399,19 +382,15 @@ article {
   font-weight: 700;
   transition: scale 0.15s;
 }
-
 article p {
   color: black;
   margin: 0 1vw 0 1vw;
 }
-
 article img {
   width: 80%;
   border-radius: 5px;
 }
-
-article:hover,
-article:focus {
+article:hover, article:focus {
   scale: 1.15;
   cursor: pointer;
   border: 3px double #6e4227;
@@ -426,7 +405,6 @@ article:focus {
   padding: 5px;
   margin-bottom: 2vw;
 }
-
 .points-grid h2 {
   font-size: 1.5vw;
   border-bottom: 1px dashed #361500;
@@ -461,16 +439,13 @@ article:focus {
   color: #EEC373;
   margin-bottom: 1vw;
 }
-
 .btn:hover {
   background-color: #361500;
   color: #EEC373;
 }
-
 .btn-secondary {
   background-color: #361500;
 }
-
 .btn-secondary:hover {
   background-color: #58331c;
 }
@@ -478,26 +453,21 @@ article:focus {
 .modal-header {
   border-bottom: 1px solid #EEC373;
 }
-
 .modal-content {
   background: rgb(129, 91, 51);
   background: linear-gradient(90deg, rgb(129, 91, 51) 0%, rgb(187, 138, 76) 35%, rgb(139, 95, 48) 92%);
 }
-
 .modal-content li {
   font-size: 2vw;
   font-weight: 700;
 }
-
 .modal-content p {
   font-size: 1.25vw;
   margin-bottom: 3vw;
 }
-
 .modal-footer {
   border-top: 1px solid #EEC373;
 }
-
 .modal-footer .btn {
   border: 1px solid #EEC373;
 }
@@ -516,14 +486,16 @@ article:focus {
   margin: 3vw 0 1vw 0;
   padding: 10px;
 }
-
 .services-grid h3 {
   font-size: 24px;
   margin-bottom: 1vw;
 }
-
 .services-grid p {
   width: 90%;
+}
+.services-grid img {
+  width: 100%;
+  height: 100%;
 }
 
 .autoservice {
@@ -556,11 +528,6 @@ article:focus {
 
 #img3 {
   grid-area: img3;
-}
-
-.services-grid img {
-  width: 100%;
-  height: 100%;
 }
 
 @media screen and (max-width: 768px) {

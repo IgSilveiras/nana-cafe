@@ -14,16 +14,21 @@
 
     margin: 3vw 0 1vw 0;
     padding: 10px;
-}
+    
+    
+    h3 {
+        font-size: 24px;
+        margin-bottom: 1vw;
+    }
+    
+    p {
+        width: 90%;
+    }
 
-
-.services-grid h3 {
-    font-size: 24px;
-    margin-bottom: 1vw;
-}
-
-.services-grid p {
-    width: 90%;
+    img {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .autoservice {
@@ -56,9 +61,4 @@
 
 #img3 {
     grid-area: img3;
-}
-
-.services-grid img {
-    width: 100%;
-    height: 100%;
 }

@@ -1,10 +1,13 @@
-#register fieldset {
-    border: 1px dashed #361500;
-    padding: 1vw 0 1vw 0;
-}
+#register {
 
-#register form {
-    border: none;
+    fieldset {
+        border: 1px dashed #361500;
+        padding: 1vw 0 1vw 0;
+    }
+    
+    form {
+        border: none;
+    }
 }
 
 .body-template legend {

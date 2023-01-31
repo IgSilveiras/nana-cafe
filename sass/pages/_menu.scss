@@ -12,21 +12,22 @@ article {
     font-weight: 700;
 
     transition: scale 0.15s;
-}
+    
 
-article p {
-    color:black;
-    margin:0 1vw 0 1vw;
-}
-
-article img {
-    width: 80%;
-    border-radius: 5px;
-}
-
-article:hover,
-article:focus {
-    scale: 1.15;
-    cursor: pointer;
-    border: 3px double #6e4227;
+    p {
+        color:black;
+        margin:0 1vw 0 1vw;
+    }
+    
+    img {
+        width: 80%;
+        border-radius: 5px;
+    }
+    
+    &:hover,
+    &:focus {
+        scale: 1.15;
+        cursor: pointer;
+        border: 3px double #6e4227;
+    }
 }
