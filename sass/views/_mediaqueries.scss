@@ -35,12 +35,12 @@
     /* Footer */
     footer {
         grid-template-columns: 20% 45% 35%;
+        
+        .fa-brands {
+            font-size: 28px;
+            margin: 0 1vw 0 1vw;
+        }   
     }
-
-    footer .fa-brands {
-        font-size: 28px;
-        margin: 0 1vw 0 1vw;
-    }   
 
 
     /* Login/Register */
@@ -55,43 +55,55 @@
 
 
     /* Menu */
-    .menu img {
-        height: 30vw;
-        min-height: 0;
+    .menu {
+        img {
+            height: 30vw;
+            min-height: 0;
+        }
+        
+        article p {
+            font-size: 2vw;
+        }
     }
-
-    .menu article p {
-        font-size: 2vw;
-    }
-
+        
 
     /* Point Shop */
-    .points-grid article {
-        height: fit-content;
-    }
+    .points-grid {
+        
+        article {
+            height: fit-content;
 
-    .points-grid img {
-        height: 14vw;
-        min-height: 0;
-    }
+            p {
+                font-size: 1.5vw;
+            }
+        }
+            
+        img {
+            height: 14vw;
+            min-height: 0;
+        }
+        
+    } 
+    
+    .modal {
 
-    .points-grid article p {
-        font-size: 1.5vw;
-    }
+        &-content {
 
-    .modal-content li {
-        font-size: 3.5vw;
+            li {
+                font-size: 3.5vw;
+            }
+            
+            p {
+                font-size: 2vw;
+                margin-bottom: 5vw;
+            }
+        }
+        
+        &-footer .btn {
+            font-size: 1.75vw;
+        }
     }
-
-    .modal-content p {
-        font-size: 2vw;
-        margin-bottom: 5vw;
-    }
-
-    .modal-footer .btn {
-        font-size: 1.75vw;
-    }
-
+        
 
     /* About Us */
     .subtitle {
@@ -145,20 +157,20 @@
     .services-grid {
         grid-template-columns: auto;
         grid-template-rows: auto;
-    }
-
-    .services-grid h3 {
-        font-size: 3vw;
-    }
-
-    .services-grid p {
-        font-size: 1.75vw;
-    }
-
-    .services-grid img {
-        min-height: 0;
-        height: 20vw;
-        width: 20vw;
+        
+        h3 {
+            font-size: 3vw;
+        }
+        
+        p {
+            font-size: 1.75vw;
+        }
+        
+        img {
+            min-height: 0;
+            height: 20vw;
+            width: 20vw;
+        }
     }
 }
 
@@ -200,10 +212,10 @@
     /* Footer */
     footer {
         grid-template-columns: 25% 40% 35%;
-    }
-
-    footer .fa-brands {
-        margin: 0 0 0 16px;
+        
+        .fa-brands {
+            margin: 0 0 0 16px;
+        }
     }
 
 
@@ -219,13 +231,16 @@
 
 
     /* Menu */
-    .menu article {
-        min-width: 30vw;
-        min-height: 30vw;
-    }
+    .menu {
 
-    .menu article p {
-        font-size: 3vw;
+        article {
+            min-width: 30vw;
+            min-height: 30vw;
+            
+            p {
+                font-size: 3vw;
+            }
+        }
     }
 
 
@@ -240,29 +255,29 @@
         grid-template-rows: 20vh auto auto;
 
         gap: 10px;
-    }
-
-    .points-grid h2 {
-        font-size: 4vw;
+        
+        h2 {
+            font-size: 4vw;
+        }
     }
 
     .faq {
         padding-bottom: 10vw;
+        
+        .btn {
+            position: relative;
+            top: 15%;
+            
+            padding: 1.5vw 3vw 1.5vw 3vw;
+            font-size: 2vw;
+        }
     }
 
     #pos-center {
         position: relative;
         top: 10%;
     }
-
-    .faq .btn {
-        position: relative;
-        top: 15%;
-
-        padding: 1.5vw 3vw 1.5vw 3vw;
-        font-size: 2vw;
-    }
-
+    
     .destacados .flex-row,
     .todos .flex-row {
         justify-content: center;
@@ -322,20 +337,20 @@
         
         grid-template-columns: auto;
         grid-template-rows: auto;
-    }
-
-    .services-grid h3 {
-        font-size: 4vw;
-    }
-
-    .services-grid p {
-        font-size: 2vw;
-        padding-bottom: 2vw;
-    }
-
-    .services-grid img {
-        width: 100%;
-        height: 30vw;
+        
+        h3 {
+            font-size: 4vw;
+        }
+        
+        p {
+            font-size: 2vw;
+            padding-bottom: 2vw;
+        }
+        
+        img {
+            width: 100%;
+            height: 30vw;
+        }
     }
 
     #img2 img {
@@ -354,26 +369,27 @@
         grid-template-columns: 30% 55% 15%;
 
         height: 20vh;
+        
+        
+        nav {
+            justify-content: center;
+            align-items: flex-end;
+            margin: 0;
+            
+            ul {
+                height: 7vh;
+                flex-wrap: nowrap;
+
+                li,
+                li a {
+                    padding: 1.5vw;
+                }
+            }
+        }   
     }
 
     .logo {
         height: 13vh;
-    }
-
-    header nav {
-        justify-content: center;
-        align-items: flex-end;
-        margin: 0;
-    }   
-
-    header nav ul {
-        height: 7vh;
-        flex-wrap: nowrap;
-    }
-
-    li,
-    li a {
-        padding: 1.5vw;
     }
 
     .pfp {
@@ -399,12 +415,15 @@
         min-height: 180px;
     }
 
-    .location h2 {
-        font-size: 28px;
-    }
+    .location {
 
-    .location iframe {
-        height: 30vh;
+        h2 {
+            font-size: 28px;
+        }
+        
+        iframe {
+            height: 30vh;
+        }
     }
 
 
@@ -446,16 +465,22 @@
         font-size: 2.5vw;
     }
 
-    .modal-content li {
-        font-size: 5vw;
-    }
+    .modal {
 
-    .modal-content p {
-        font-size: 3.5vw;
-    }
+        &-content {
 
-    .modal-footer .btn {
-        font-size: 2.5vw;
+            li {
+                font-size: 5vw;
+            }
+            
+            p {
+                font-size: 3.5vw;
+            }
+        }
+        
+        &-footer .btn {
+            font-size: 2.5vw;
+        }
     }
 
 
@@ -519,21 +544,25 @@
         margin: 5vw;
     }
 
-    .login-content p {
-        font-size: 10vw;
-    }
+    .login-content {
 
-    .login-content a {
-        font-size: 8vw;
-    }
-
-    .form-container .flex-row {
-        flex-direction: column;
+        p {
+            font-size: 10vw;
+        }
+        
+        a {
+            font-size: 8vw;
+        }
     }
 
     .form-container {
         padding-bottom: 2vh;
+        
+        .flex-row {
+            flex-direction: column;
+        }
     }
+
 
     .form-content {
         margin-top: 3vw;
@@ -554,29 +583,29 @@
     /* Footer */
     footer {
         grid-template-columns: 25% 35% 40%;
-    }
-
-    footer a {
-        font-size: 11px;
-    }
-
-    footer p {
-        font-size: 10px;
+        
+        a {
+            font-size: 11px;
+        }
+        
+        p {
+            font-size: 10px;
+        }
     }
 
 
     /* Point Shop */
     .points-grid {
         grid-template-columns: 20% 55% 20%;
-    }
-
-    .points-grid article {
-        min-width: 60vw;
-        min-height: 50vw;
-    }
-
-    .points-grid article p {
-        font-size: 10px;
+        
+        article {
+            min-width: 60vw;
+            min-height: 50vw;
+            
+            p {
+                font-size: 10px;
+            }
+        }
     }
 
 
@@ -596,15 +625,15 @@
         "delivery delivery"
         "points points";
 
-        gap:10px
-    }
-
-    .services-grid h3 {
-        font-size: 6vw;
-    }
-
-    .services-grid p {
-        font-size: 3vw;
+        gap:10px;
+        
+        h3 {
+            font-size: 6vw;
+        }
+        
+        p {
+            font-size: 3vw;
+        }
     }
 }
 
@@ -643,12 +672,15 @@
 
 
     /* Login/Register */
-    .body-template p {
-        font-size: 16px;
-    }
+    .body-template {
 
-    .body-template div input {
-        width: 75%;
+        p {
+            font-size: 16px;
+        }
+        
+        div input {
+            width: 75%;
+        }
     }
 
     #register input {
@@ -657,18 +689,21 @@
     
 
     /* Menu */
-    .menu article {
-       min-width: 45vw;
-       min-height: 40vw; 
-    }
+    .menu {
 
-    .menu article p {
-        font-size: 4vw;
-    }
-
-    .menu img {
-        height: 30vw;
-        min-height: 0;
+        article {
+            min-width: 45vw;
+            min-height: 40vw; 
+            
+            p {
+                font-size: 4vw;
+            }
+        }
+        
+        img {
+            height: 30vw;
+            min-height: 0;
+        }
     }
 
 

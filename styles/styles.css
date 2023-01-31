@@ -583,12 +583,12 @@ article:hover, article:focus {
   .points-grid article {
     height: fit-content;
   }
+  .points-grid article p {
+    font-size: 1.5vw;
+  }
   .points-grid img {
     height: 14vw;
     min-height: 0;
-  }
-  .points-grid article p {
-    font-size: 1.5vw;
   }
   .modal-content li {
     font-size: 3.5vw;
@@ -714,15 +714,15 @@ article:hover, article:focus {
   .faq {
     padding-bottom: 10vw;
   }
-  #pos-center {
-    position: relative;
-    top: 10%;
-  }
   .faq .btn {
     position: relative;
     top: 15%;
     padding: 1.5vw 3vw 1.5vw 3vw;
     font-size: 2vw;
+  }
+  #pos-center {
+    position: relative;
+    top: 10%;
   }
   .destacados .flex-row,
 .todos .flex-row {
@@ -789,9 +789,6 @@ article:hover, article:focus {
     grid-template-columns: 30% 55% 15%;
     height: 20vh;
   }
-  .logo {
-    height: 13vh;
-  }
   header nav {
     justify-content: center;
     align-items: flex-end;
@@ -801,9 +798,12 @@ article:hover, article:focus {
     height: 7vh;
     flex-wrap: nowrap;
   }
-  li,
-li a {
+  header nav ul li,
+header nav ul li a {
     padding: 1.5vw;
+  }
+  .logo {
+    height: 13vh;
   }
   .pfp {
     margin-right: 5vw;
@@ -913,11 +913,11 @@ li a {
   .login-content a {
     font-size: 8vw;
   }
-  .form-container .flex-row {
-    flex-direction: column;
-  }
   .form-container {
     padding-bottom: 2vh;
+  }
+  .form-container .flex-row {
+    flex-direction: column;
   }
   .form-content {
     margin-top: 3vw;
