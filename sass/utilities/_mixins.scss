@@ -1,0 +1,6 @@
+@mixin locate-subtitle () {
+    grid-area: subtitle;
+    
+    font-size: 1.25vw;
+    border-bottom: 2px dashed #361500;
+}

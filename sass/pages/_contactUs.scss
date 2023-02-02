@@ -40,10 +40,7 @@
 .sns-subtitle,
 .login-subtitle,
 .form-subtitle {
-    grid-area: subtitle;
-    
-    font-size: 1.25vw;
-    border-bottom: 2px dashed #361500;
+    @include locate-subtitle
 }
 
 .login-content {

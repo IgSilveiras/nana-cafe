@@ -31,24 +31,10 @@
     }
 }
 
-.autoservice {
-    grid-area: autoservice;
-}
-
-.coffee {
-    grid-area: coffee;
-}
-
-.delivery {
-    grid-area: delivery;
-}
-
-.points {
-    grid-area: points;
-}
-
-.custom {
-    grid-area: custom;
+@each $area in autoservice, coffee, delivery, points, custom {
+    .#{$area}{
+        grid-template-areas: #{$area};
+    }
 }
 
 #img1 {

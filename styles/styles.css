@@ -499,23 +499,23 @@ article:hover, article:focus {
 }
 
 .autoservice {
-  grid-area: autoservice;
+  grid-template-areas: autoservice;
 }
 
 .coffee {
-  grid-area: coffee;
+  grid-template-areas: coffee;
 }
 
 .delivery {
-  grid-area: delivery;
+  grid-template-areas: delivery;
 }
 
 .points {
-  grid-area: points;
+  grid-template-areas: points;
 }
 
 .custom {
-  grid-area: custom;
+  grid-template-areas: custom;
 }
 
 #img1 {
