@@ -978,6 +978,7 @@ header nav ul li a {
   }
   .menu img {
     height: 45vw;
+    width: 70%;
     min-height: 0;
   }
 }
