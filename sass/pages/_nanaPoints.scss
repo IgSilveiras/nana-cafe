@@ -16,20 +16,14 @@
     
     h2 {
         font-size: 1.5vw;
-        border-bottom: 1px dashed #361500;
+        border-bottom: map-get($map: $bordes, $key: dashed-1px);
     }
 }
-    
-.faq {
-    grid-area: faq;
-}
 
-.destacados {
-    grid-area: destacados;
-}
-
-.todos {
-    grid-area: todos;
+@each $area in faq, destacados, todos {
+    .#{$area}{
+        grid-area: #{$area};
+    }
 }
 
 #pos-center {
@@ -45,20 +39,20 @@
 .btn {
     padding: 1vw 2vw 1vw 2vw;
     font-size: 1.5vw;
-    background-color: #58331c;
+    background-color: $brown;
     color:#EEC373;
     margin-bottom: 1vw;
     
     &:hover {
-        background-color: #361500;
+        background-color: $background-1;
         color:#EEC373;
     }
     
     &-secondary {
-        background-color: #361500;
+        background-color: $background-1;
         
         &:hover {
-            background-color: #58331c;
+            background-color: $brown;
         }
     }
 }
@@ -66,12 +60,12 @@
 .modal {
     
     &-header {
-        border-bottom: 1px solid #EEC373
+        border-bottom: map-get($map: $bordes, $key: solid-1px);
     }
     
     &-content {
         background: rgb(129,91,51);
-        background: linear-gradient(90deg, rgba(129,91,51,1) 0%, rgba(187,138,76,1) 35%, rgba(139,95,48,1) 92%);    
+        background: $background-gradient;
         
         li {
             font-size: 2vw;
@@ -85,10 +79,10 @@
     }
     
     &-footer {
-        border-top: 1px solid #EEC373;
+        border-top: map-get($map: $bordes, $key: solid-1px);
         
         .btn {
-            border: 1px solid #EEC373
+            border: map-get($map: $bordes, $key: solid-1px)
         }
     }
 }

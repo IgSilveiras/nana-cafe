@@ -1,6 +1,7 @@
 @import "./normalize/_reset.scss";
 @import "./components/_classes.scss";
-@import "./utilities/mixins";
+@import "./utilities/_variables";
+@import "./utilities/_mixins";
 @import "./layout/_header.scss";
 @import "./layout/_main.scss";
 @import "./layout/_footer.scss";
@@ -10,5 +11,5 @@
 @import "./pages/_register.scss";
 @import "./pages/_menu.scss";
 @import "./pages/_nanaPoints.scss";
-@import "./pages/services.scss";
-@import "./views/mediaqueries.scss";
+@import "./pages/_services.scss";
+@import "./views/_mediaqueries.scss";

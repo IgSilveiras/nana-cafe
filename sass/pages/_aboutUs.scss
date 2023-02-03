@@ -8,19 +8,19 @@
     grid-template-columns: 45vh auto;
 
     margin: 7.5vh 7.5vw 7.5vh 7.5vw;
-    border: 3px solid #361500;
+    border: map-get($map: $bordes, $key: solid-3px);
 }
 
 .mumei-pic {
     grid-area: pic;
     width: 100%;
     height: 100%;
-    border-right: 2px dashed #361500;
+    border-right: map-get($map: $bordes, $key: dashed-2px);
 }
 
 #credit {
     grid-area: credit;
-    border-right: 2px dashed #361500;
+    border-right: map-get($map: $bordes, $key: dashed-2px);
     text-align: end;
 }
 
@@ -41,7 +41,7 @@
 
 .accordion-button,
 .accordion-button:enabled {
-    background-color: #361500;
+    background-color: $background-1;
     color:#EEC373;
     font-family: 'Nunito', sans-serif;
     font-size: 24px;

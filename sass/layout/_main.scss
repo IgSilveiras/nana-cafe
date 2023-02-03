@@ -11,7 +11,7 @@
 
 main {
     background: rgb(129,91,51);
-    background: linear-gradient(90deg, rgba(129,91,51,1) 0%, rgba(187,138,76,1) 35%, rgba(139,95,48,1) 92%);    
+    background: $background-gradient;
     
     color:#F4DFBA;
     font-family: 'Nunito', sans-serif;

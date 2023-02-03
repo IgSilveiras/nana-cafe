@@ -5,7 +5,7 @@
         padding: 10px;
         font-size: 20px;
         width: 50%;
-        border: 1px dashed #361500;
+        border: map-get($map: $bordes, $key: dashed-1px);
     }
     
     p {

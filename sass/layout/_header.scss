@@ -2,7 +2,7 @@ header {
     position: sticky;
     top:0;
 
-    background-color: #361500;
+    background-color: $background-1;
 
     display: grid; 
     grid-template-areas: "logo nav pfp";

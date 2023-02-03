@@ -19,7 +19,7 @@
     "content";
 
     grid-template-rows: 1fr 3fr;
-    border: 2px solid #361500;
+    border: map-get($map: $bordes, $key: solid-2px);
 }
 
 .sns-container {

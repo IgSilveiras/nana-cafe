@@ -5,7 +5,7 @@ article {
     padding: 1.25vw;
 
     background-color: white;
-    border: 3px solid #6e4227;
+    border: map-get($map: $bordes, $key: solid-3px-alt);
     border-radius: 5px;
 
     font-size: 1.2vw;
@@ -28,6 +28,6 @@ article {
     &:focus {
         scale: 1.15;
         cursor: pointer;
-        border: 3px double #6e4227;
+        border: map-get($map: $bordes, $key: double-3px);
     }
 }
