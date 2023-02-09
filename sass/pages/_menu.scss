@@ -27,7 +27,6 @@ article {
     &:hover,
     &:focus {
         scale: 1.15;
-        cursor: pointer;
         border: map-get($map: $bordes, $key: double-3px);
     }
 }

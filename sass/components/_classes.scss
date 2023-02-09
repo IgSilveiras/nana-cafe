@@ -1,3 +1,5 @@
+// Defino clases utilitarias //
+
 .bgc-1 {
     background-color: #361500;
 }
@@ -75,11 +77,11 @@
 }
 
 .solid-border {
-    border: 2px solid #361500;
+    border: map-get($map: $bordes, $key: solid-2px);
 }
 
 .dashed-border {
-    border: 1px dashed #361500
+    border: map-get($map: $bordes, $key: dashed-1px);
 }
 
 .expand {

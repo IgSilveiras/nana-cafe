@@ -44,8 +44,17 @@
 
 
     /* Login/Register */
-    .body-template p {
-        font-size: 3vw;
+    .body-template {
+        p { 
+            font-size: 3vw;
+        } 
+        
+        .buttons {
+            input {
+                padding: 1vw 2.25vw 1vw 2.25vw;
+                font-size: 1.75vw;
+            }
+        }
     }
 
     #register form {
@@ -226,8 +235,14 @@
         margin: 5px;
     }
 
-    .body-template input {
-        width: 75%;
+    .body-template {
+        input {
+            width: 75%;
+        }
+
+        .buttons input {
+            font-size: 3vw;
+        }
     }
 
 
@@ -578,6 +593,10 @@
     .services-grid img {
         min-height: 0;
     }
+
+    #img2 {
+        margin-left: 12vw;
+    }
 }
 
 @media screen and (max-width: 390px) {
@@ -636,6 +655,7 @@
             font-size: 3vw;
         }
     }
+
 
     /* Menu */
     .menu {

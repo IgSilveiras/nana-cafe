@@ -356,6 +356,18 @@ form textarea {
 .body-template a:visited {
   color: #0066cc;
 }
+.body-template .buttons input {
+  padding: 0.4vw 1.25vw 0.4vw 1.25vw;
+  font-size: 1.2vw;
+  background-color: #58331c;
+  color: #EEC373;
+  border-radius: 5px;
+  border: 2px solid #361500;
+}
+.body-template .buttons input:hover {
+  background-color: #361500;
+  color: #EEC373;
+}
 
 #register fieldset {
   border: 1px dashed #361500;
@@ -392,7 +404,6 @@ article img {
 }
 article:hover, article:focus {
   scale: 1.15;
-  cursor: pointer;
   border: 3px double #6e4227;
 }
 
@@ -494,7 +505,7 @@ article:hover, article:focus {
   width: 90%;
 }
 .services-grid img {
-  width: 100%;
+  width: 80%;
   height: 100%;
 }
 
@@ -524,6 +535,8 @@ article:hover, article:focus {
 
 #img2 {
   grid-area: img2;
+  width: 70%;
+  margin-left: 4.25vw;
 }
 
 #img3 {
@@ -567,6 +580,10 @@ article:hover, article:focus {
   .body-template p {
     font-size: 3vw;
   }
+  .body-template .buttons input {
+    padding: 1vw 2.25vw 1vw 2.25vw;
+    font-size: 1.75vw;
+  }
   #register form {
     width: 90%;
     font-size: 14px;
@@ -606,7 +623,7 @@ article:hover, article:focus {
     font-size: 10vw;
   }
   #credit,
-.description {
+  .description {
     font-size: 1.5vw;
   }
   .about-grid {
@@ -621,8 +638,8 @@ article:hover, article:focus {
   }
   /* Contacto */
   .sns-subtitle,
-.login-subtitle,
-.form-subtitle {
+  .login-subtitle,
+  .form-subtitle {
     font-size: 2vw;
   }
   .sns-content a {
@@ -694,6 +711,9 @@ article:hover, article:focus {
   .body-template input {
     width: 75%;
   }
+  .body-template .buttons input {
+    font-size: 3vw;
+  }
   /* Menu */
   .menu article {
     min-width: 30vw;
@@ -726,25 +746,25 @@ article:hover, article:focus {
     top: 10%;
   }
   .destacados .flex-row,
-.todos .flex-row {
+  .todos .flex-row {
     justify-content: center;
   }
   .destacados .flex-row:not(.space-between),
-.todos .flex-row:not(.space-between) {
+  .todos .flex-row:not(.space-between) {
     flex-wrap: wrap;
   }
   .destacados article,
-.todos article {
+  .todos article {
     width: 40vw;
     height: 30vw;
   }
   .destacados article img,
-.todos article img {
+  .todos article img {
     width: 80%;
     height: 90%;
   }
   .destacados article p,
-.todos article p {
+  .todos article p {
     font-size: 2.5vw;
   }
   /* About Us */
@@ -756,7 +776,7 @@ article:hover, article:focus {
     font-size: 10vw;
   }
   #credit,
-.description {
+  .description {
     font-size: 1.75vw;
   }
   .accordion {
@@ -800,7 +820,7 @@ article:hover, article:focus {
     flex-wrap: nowrap;
   }
   header nav ul li,
-header nav ul li a {
+  header nav ul li a {
     padding: 1.5vw;
   }
   .logo {
@@ -840,22 +860,22 @@ header nav ul li a {
   }
   /* Point Shop */
   .destacados .flex-row,
-.todos .flex-row {
+  .todos .flex-row {
     justify-content: center;
   }
   .destacados article,
-.todos article {
+  .todos article {
     width: 40vw;
     height: 35vw;
   }
   .destacados article img,
-.todos article img {
+  .todos article img {
     min-height: 0;
     width: 80%;
     height: 90%;
   }
   .destacados article p,
-.todos article p {
+  .todos article p {
     font-size: 2.5vw;
   }
   .modal-content li {
@@ -900,8 +920,8 @@ header nav ul li a {
     padding-bottom: 16vh;
   }
   .sns-subtitle,
-.login-subtitle,
-.form-subtitle {
+  .login-subtitle,
+  .form-subtitle {
     font-size: 3.5vw;
   }
   .sns-content a {
@@ -929,6 +949,9 @@ header nav ul li a {
   /* Servicios */
   .services-grid img {
     min-height: 0;
+  }
+  #img2 {
+    margin-left: 12vw;
   }
 }
 @media screen and (max-width: 390px) {
