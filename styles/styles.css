@@ -336,8 +336,16 @@ form textarea {
   margin-top: 3vh;
 }
 .buttons input {
-  padding: 2.5px 10px 2.5px 10px;
-  margin: 0 2vw 0 2vw;
+  padding: 0.4vw 1.25vw 0.4vw 1.25vw;
+  font-size: 1.2vw;
+  background-color: #58331c;
+  color: #EEC373;
+  border-radius: 5px;
+  border: 2px solid #361500;
+}
+.buttons input:hover {
+  background-color: #361500;
+  color: #EEC373;
 }
 
 .body-template {
@@ -654,6 +662,10 @@ article:hover, article:focus {
   .form-container {
     font-size: 2.5vw;
   }
+  .buttons input {
+    padding: 1vw 2.25vw 1vw 2.25vw;
+    font-size: 1.75vw;
+  }
   /* Servicios */
   .services-grid {
     grid-template-columns: auto;
@@ -802,6 +814,10 @@ article:hover, article:focus {
   #img2 img {
     height: 60vw;
   }
+  /* Contacto */
+  .buttons input {
+    font-size: 3vw;
+  }
 }
 @media screen and (max-width: 470px) {
   /* Header */
@@ -851,6 +867,10 @@ article:hover, article:focus {
   }
   /* Login/Register */
   .body-template p {
+    font-size: 4vw;
+  }
+  .body-template .buttons input {
+    padding: 2vw 0 2vw 0;
     font-size: 4vw;
   }
   /* Menu */
@@ -1052,5 +1072,11 @@ article:hover, article:focus {
   /* Contacto */
   .form-content {
     font-size: 12px;
+  }
+  .form-content .buttons input {
+    width: 75%;
+    font-size: 4vw;
+    padding: 3vw 0 3vw 0;
+    margin-bottom: 3vw;
   }
 }

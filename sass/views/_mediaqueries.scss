@@ -162,6 +162,13 @@
         font-size: 2.5vw;
     }
 
+    .buttons {
+        input {
+            padding: 1vw 2.25vw 1vw 2.25vw;
+            font-size: 1.75vw;
+        }
+    }
+
 
     /* Servicios */
     .services-grid {
@@ -372,6 +379,11 @@
     #img2 img {
         height: 60vw;
     }
+
+    /* Contacto */
+    .buttons input {
+        font-size: 3vw;
+    }
 }
 
 @media screen and (max-width: 470px) {
@@ -444,8 +456,15 @@
 
 
     /* Login/Register */
-    .body-template p {
-        font-size: 4vw;
+    .body-template {
+        p {
+            font-size: 4vw;
+        }
+
+        .buttons input {
+            padding: 2vw 0 2vw 0;
+            font-size: 4vw;
+        }
     }
 
 
@@ -747,5 +766,12 @@
     /* Contacto */
     .form-content {
         font-size: 12px;
+        
+        .buttons input {
+            width: 75%;
+            font-size: 4vw;
+            padding: 3vw 0 3vw 0;
+            margin-bottom: 3vw;
+        }
     }
 }

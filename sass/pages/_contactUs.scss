@@ -81,7 +81,16 @@ form textarea {
     margin-top: 3vh;
 
     input {
-        padding: 2.5px 10px 2.5px 10px;
-        margin:0 2vw 0 2vw;
+        padding: 0.4vw 1.25vw 0.4vw 1.25vw;
+        font-size: 1.2vw;
+        background-color: $brown;
+        color:#EEC373;
+        border-radius: 5px;
+        border: map-get($map: $bordes, $key: solid-2px);
+    
+        &:hover {
+            background-color: $background-1;
+            color:#EEC373;
+        }
     }
 }
