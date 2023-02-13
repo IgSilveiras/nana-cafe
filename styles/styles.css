@@ -312,6 +312,10 @@ footer .fa-brands {
   font-size: 2.25vw;
   text-decoration: none;
 }
+.login-content a:hover, .login-content a:focus {
+  color: #361500;
+  text-shadow: 1px 1px 8px #361500;
+}
 
 .form-container {
   grid-area: form;
@@ -389,13 +393,16 @@ form textarea {
 #register form fieldset .flex-row {
   margin: 2px 0 2px 0;
 }
+#register form fieldset .center {
+  margin: 0 2px 0 2px;
+}
 #register form fieldset .buttons input {
   margin: 0 1vw 0 1vw;
 }
 
 .body-template legend {
   margin-left: 4vw;
-  font-size: 28px;
+  font-size: 24px;
 }
 
 article {

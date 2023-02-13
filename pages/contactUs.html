@@ -22,6 +22,9 @@
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <!-- Estilos -->
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
@@ -52,9 +55,9 @@
                 </div>
 
                 <div class="sns-content flex-row center jc-center">
-                    <a href="https://web.whatsapp.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp white"></i></a>
-                    <a href="https://twitter.com/?lang=en" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter white"></i></a>
-                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram white"></i></a>
+                    <a href="https://web.whatsapp.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp white animate__animated animate__pulse wow"></i></a>
+                    <a href="https://twitter.com/?lang=en" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter white animate__animated animate__pulse wow"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram white animate__animated animate__pulse wow"></i></a>
                 </div>
             </div>
 
@@ -64,7 +67,7 @@
                 </div>
 
                 <div class="login-content flex-row center jc-center">
-                    <p><a class="beige" href="./login.html">Login</a> | <a class="beige" href="./register.html">Register</a></p>
+                    <p class="animate__animated animate__pulse wow"><a class="beige" href="./login.html">Login</a> | <a class="beige" href="./register.html">Register</a></p>
                 </div>
             </div>
 
@@ -118,5 +121,11 @@
             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram white"></i></a>
         </div>
     </footer>
+
+    <!-- wow.js -->
+    <script src="../js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 </body>
 </html>

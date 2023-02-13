@@ -52,6 +52,11 @@
     a {
         font-size: 2.25vw;
         text-decoration: none;
+
+        &:hover, &:focus {
+            color: $background-1;
+            text-shadow: 1px 1px 8px $background-1;
+        }
     }
     
 }
