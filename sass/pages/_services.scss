@@ -31,6 +31,7 @@
     }
 }
 
+// Ubico los contenedores dentro del grid //
 @each $area in autoservice, coffee, delivery, points, custom {
     .#{$area}{
         grid-area: #{$area};

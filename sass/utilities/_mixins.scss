@@ -4,3 +4,8 @@
     font-size: 1.25vw;
     border-bottom: map-get($map: $bordes, $key: dashed-2px);
 }
+
+@mixin buttons () {
+    padding: 1vw 2.25vw 1vw 2.25vw;
+    font-size: 1.75vw;
+}

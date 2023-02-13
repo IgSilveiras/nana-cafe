@@ -51,15 +51,17 @@
         
         .buttons {
             input {
-                padding: 1vw 2.25vw 1vw 2.25vw;
-                font-size: 1.75vw;
+                @include buttons;
             }
         }
     }
 
     #register form {
         width: 90%;
-        font-size: 14px;
+
+        fieldset {
+            font-size: 2vw;
+        }
     }
 
 
@@ -164,8 +166,7 @@
 
     .buttons {
         input {
-            padding: 1vw 2.25vw 1vw 2.25vw;
-            font-size: 1.75vw;
+            @include buttons;
         }
     }
 
@@ -237,11 +238,6 @@
 
 
     /* Login/Register */
-    #register form .flex-row {
-        flex-direction: column;
-        margin: 5px;
-    }
-
     .body-template {
         input {
             width: 75%;
@@ -249,6 +245,23 @@
 
         .buttons input {
             font-size: 3vw;
+        }
+    }
+
+    #register {
+
+        form {
+            .flex-row {
+                margin: 5px;
+            }
+
+            fieldset {
+                font-size: 2.5vw;
+
+                .buttons input {
+                    margin: 2px 0 2px 0;
+                }
+            }
         }
     }
 
@@ -743,8 +756,20 @@
         }
     }
 
-    #register input {
-        width: 50%;
+    #register {
+        
+        form fieldset {
+            font-size: 16px;
+
+            .flex-row {
+                flex-direction: column;
+            }
+            
+            .buttons input {
+                width: 75%;
+                padding: 1.25vw 3vw 1.25vw 3vw;
+            }
+        }
     }
 
 

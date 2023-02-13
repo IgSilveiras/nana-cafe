@@ -377,12 +377,20 @@ form textarea {
   color: #EEC373;
 }
 
-#register fieldset {
+#register form {
+  border: none;
+  width: 65%;
+}
+#register form fieldset {
+  font-size: 1.4vw;
   border: 1px dashed #361500;
   padding: 1vw 0 1vw 0;
 }
-#register form {
-  border: none;
+#register form fieldset .flex-row {
+  margin: 2px 0 2px 0;
+}
+#register form fieldset .buttons input {
+  margin: 0 1vw 0 1vw;
 }
 
 .body-template legend {
@@ -594,7 +602,9 @@ article:hover, article:focus {
   }
   #register form {
     width: 90%;
-    font-size: 14px;
+  }
+  #register form fieldset {
+    font-size: 2vw;
   }
   /* Menu */
   .menu img {
@@ -716,15 +726,20 @@ article:hover, article:focus {
     margin: 0 0 0 16px;
   }
   /* Login/Register */
-  #register form .flex-row {
-    flex-direction: column;
-    margin: 5px;
-  }
   .body-template input {
     width: 75%;
   }
   .body-template .buttons input {
     font-size: 3vw;
+  }
+  #register form .flex-row {
+    margin: 5px;
+  }
+  #register form fieldset {
+    font-size: 2.5vw;
+  }
+  #register form fieldset .buttons input {
+    margin: 2px 0 2px 0;
   }
   /* Menu */
   .menu article {
@@ -1056,8 +1071,15 @@ article:hover, article:focus {
   .body-template div input {
     width: 75%;
   }
-  #register input {
-    width: 50%;
+  #register form fieldset {
+    font-size: 16px;
+  }
+  #register form fieldset .flex-row {
+    flex-direction: column;
+  }
+  #register form fieldset .buttons input {
+    width: 75%;
+    padding: 1.25vw 3vw 1.25vw 3vw;
   }
   /* Point Shop */
   .faq .btn {

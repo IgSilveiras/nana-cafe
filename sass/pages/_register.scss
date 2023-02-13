@@ -1,12 +1,22 @@
 #register {
-
-    fieldset {
-        border: map-get($map: $bordes, $key: dashed-1px);
-        padding: 1vw 0 1vw 0;
-    }
-    
+  
     form {
         border: none;
+        width: 65%;
+
+        fieldset {
+            font-size: 1.4vw;
+            border: map-get($map: $bordes, $key: dashed-1px);
+            padding: 1vw 0 1vw 0;
+
+            .flex-row {
+                margin: 2px 0 2px 0;
+            }
+
+            .buttons input {
+                margin: 0 1vw 0 1vw;
+            }
+        }
     }
 }
 
